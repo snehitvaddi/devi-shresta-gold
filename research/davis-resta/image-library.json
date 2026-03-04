@@ -1,0 +1,539 @@
+{
+  "unsplash": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1600&q=80",
+        "description": "Elegant woman wearing traditional Indian gold jewelry and necklace set",
+        "category": "hero",
+        "photographer": "Syed Hussaini"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=1600&q=80",
+        "description": "Gold jewelry collection display in luxury store setting",
+        "category": "hero",
+        "photographer": "Unsplash Collection"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515562141589-67f0d999b36b?w=1600&q=80",
+        "description": "Luxury jewelry display with warm golden lighting",
+        "category": "hero",
+        "photographer": "Unsplash Collection"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=1600&q=80",
+        "description": "Beautiful Indian bride with traditional gold bridal jewelry",
+        "category": "hero",
+        "photographer": "Unsplash Collection"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=1600&q=80",
+        "description": "Minimalist jewelry on white marble luxury display",
+        "category": "hero",
+        "photographer": "Unsplash Collection"
+      }
+    ],
+    "necklaces": [
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "description": "Gold necklace with intricate chain design, close-up on dark background",
+        "category": "necklaces",
+        "subcategory": "gold"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80",
+        "description": "Elegant gold chain necklace with pendant on display",
+        "category": "necklaces",
+        "subcategory": "gold"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80",
+        "description": "Traditional gold necklace jewelry set on dark velvet",
+        "category": "necklaces",
+        "subcategory": "gold"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80",
+        "description": "Layered gold necklace chains with delicate pendants",
+        "category": "necklaces",
+        "subcategory": "gold"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515562141589-67f0d999b36b?w=800&q=80",
+        "description": "Diamond necklace on elegant display stand with sparkle",
+        "category": "necklaces",
+        "subcategory": "diamond"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?w=800&q=80",
+        "description": "Choker necklace with diamond stones on white background",
+        "category": "necklaces",
+        "subcategory": "diamond"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&q=80",
+        "description": "Woman wearing delicate gold chain necklace - lifestyle shot",
+        "category": "necklaces",
+        "subcategory": "daily-wear"
+      }
+    ],
+    "rings": [
+      {
+        "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80",
+        "description": "Solitaire diamond engagement ring on white surface, close-up",
+        "category": "rings",
+        "subcategory": "engagement",
+        "unsplash_id": "PvySs_vHAug"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80",
+        "description": "Diamond engagement ring with halo setting on dark background",
+        "category": "rings",
+        "subcategory": "engagement"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&q=80",
+        "description": "Gold wedding bands - pair on soft fabric background",
+        "category": "rings",
+        "subcategory": "wedding",
+        "unsplash_id": "jjDxOA5uOhw"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=800&q=80",
+        "description": "Two gold wedding rings on paper with soft bokeh",
+        "category": "rings",
+        "subcategory": "wedding",
+        "unsplash_id": "YeJWDWeIZho"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1608042314453-ae338d80c427?w=800&q=80",
+        "description": "Rose gold diamond cluster ring with floral design",
+        "category": "rings",
+        "subcategory": "fashion",
+        "unsplash_id": "V6CM24byQus"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1586104237516-5765e3da085e?w=800&q=80",
+        "description": "Person holding diamond solitaire ring, proposal moment",
+        "category": "rings",
+        "subcategory": "engagement",
+        "unsplash_id": "IXLS59CTgDE"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1598560917505-59a3ad559071?w=800&q=80",
+        "description": "Gold ring with gemstone on velvet cushion",
+        "category": "rings",
+        "subcategory": "fashion"
+      }
+    ],
+    "earrings": [
+      {
+        "url": "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=800&q=80",
+        "description": "Woman wearing large gold hoop earrings - beauty portrait",
+        "category": "earrings",
+        "subcategory": "hoops",
+        "unsplash_id": "7up01bDHPNw"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=800&q=80",
+        "description": "Gold hoop earrings on white background, product shot",
+        "category": "earrings",
+        "subcategory": "hoops",
+        "unsplash_id": "ZP7HXfjRVcY"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=800&q=80",
+        "description": "Woman wearing gold necklace and traditional earrings",
+        "category": "earrings",
+        "subcategory": "jhumkas",
+        "unsplash_id": "Xk63CKacKLY"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1629224316810-9d8805b95e76?w=800&q=80",
+        "description": "Close-up of woman wearing elegant drop earrings",
+        "category": "earrings",
+        "subcategory": "drops",
+        "unsplash_id": "ijO5XdA9bqM"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+        "description": "Diamond stud earrings close-up on dark background",
+        "category": "earrings",
+        "subcategory": "studs"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=800&q=80",
+        "description": "Woman in black top wearing gold earrings",
+        "category": "earrings",
+        "subcategory": "daily-wear",
+        "unsplash_id": "_5oWvpil1kk"
+      }
+    ],
+    "bangles": [
+      {
+        "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80",
+        "description": "Gold-colored bangles arranged artfully, traditional Indian design",
+        "category": "bangles",
+        "subcategory": "gold",
+        "unsplash_id": "ll_Z2IZmgLs"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "description": "Traditional Indian gold bangles and bracelet jewelry set",
+        "category": "bangles",
+        "subcategory": "gold",
+        "unsplash_id": "itriu-lCKzs"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?w=800&q=80",
+        "description": "Person wearing gold bracelets and bangles - Indian wedding style",
+        "category": "bangles",
+        "subcategory": "gold",
+        "unsplash_id": "SUwPo4ErQCc"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&q=80",
+        "description": "Diamond tennis bracelet on white surface",
+        "category": "bangles",
+        "subcategory": "diamond"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "description": "Gold kada / thick bangle with traditional design",
+        "category": "bangles",
+        "subcategory": "kada"
+      }
+    ],
+    "bridal": [
+      {
+        "url": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80",
+        "description": "Indian bride in full bridal jewelry - necklace, earrings, maang tikka",
+        "category": "bridal",
+        "subcategory": "complete-set",
+        "unsplash_id": "gYCdjq-2830"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1610173826608-e2a51e274e45?w=800&q=80",
+        "description": "Traditional South Asian bride with gold and red jewelry set",
+        "category": "bridal",
+        "subcategory": "complete-set",
+        "unsplash_id": "lfgqyh6R6bE"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1594552072238-5c4ed37432a8?w=800&q=80",
+        "description": "Beautiful woman adorned in traditional Indian bridal jewelry",
+        "category": "bridal",
+        "subcategory": "complete-set",
+        "unsplash_id": "pRpz3dTl3NA"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+        "description": "Indian bride showing bridal gold necklace and earrings",
+        "category": "bridal",
+        "subcategory": "necklace-set"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=800&q=80",
+        "description": "Bridal diamond necklace set with matching earrings on display",
+        "category": "bridal",
+        "subcategory": "diamond"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?w=800&q=80",
+        "description": "Bride wearing maang tikka and nose ring with kundan work",
+        "category": "bridal",
+        "subcategory": "accessories"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+        "description": "Bridal hands with gold bangles and mehndi/henna design",
+        "category": "bridal",
+        "subcategory": "anklets"
+      }
+    ],
+    "temple": [
+      {
+        "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+        "description": "Traditional Indian temple-style gold jewelry with intricate motifs",
+        "category": "temple",
+        "subcategory": "necklace"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80",
+        "description": "Antique gold necklace with temple design motifs on dark velvet",
+        "category": "temple",
+        "subcategory": "necklace"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+        "description": "Gold temple choker with traditional kemp stone setting",
+        "category": "temple",
+        "subcategory": "choker"
+      }
+    ],
+    "mens": [
+      {
+        "url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&q=80",
+        "description": "Man wearing gold chain around his neck - portrait",
+        "category": "mens",
+        "subcategory": "chains",
+        "unsplash_id": "F5Fh6KGc0NE"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=800&q=80",
+        "description": "Gold chain bracelet sitting on magazine - product photography",
+        "category": "mens",
+        "subcategory": "bracelets",
+        "unsplash_id": "oO0JAOJhquk"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1598560917505-59a3ad559071?w=800&q=80",
+        "description": "Men's gold signet ring close-up on dark background",
+        "category": "mens",
+        "subcategory": "rings"
+      }
+    ],
+    "pendants": [
+      {
+        "url": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80",
+        "description": "Gold chain with diamond pendant on elegant display",
+        "category": "pendants",
+        "subcategory": "diamond"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80",
+        "description": "Delicate gold pendant necklace with small diamond",
+        "category": "pendants",
+        "subcategory": "diamond"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&q=80",
+        "description": "Solitaire diamond pendant on thin gold chain",
+        "category": "pendants",
+        "subcategory": "solitaire"
+      }
+    ],
+    "coins": [
+      {
+        "url": "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80",
+        "description": "Three gold bars stacked on each other - bullion investment",
+        "category": "coins",
+        "subcategory": "bars",
+        "unsplash_id": "XHikIfxVZdY"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1624365168968-f283d506c6b6?w=800&q=80",
+        "description": "Gold bar sitting on paper - precious metal investment",
+        "category": "coins",
+        "subcategory": "bars",
+        "unsplash_id": "LyaBFrZod7A"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1607292803062-5b8ff0531b88?w=800&q=80",
+        "description": "Pile of gold bars on table - investment display",
+        "category": "coins",
+        "subcategory": "bars",
+        "unsplash_id": "uIPmrpU4awE"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1589787168422-831837e0ed2c?w=800&q=80",
+        "description": "Gold coins and bars stacked together - investment",
+        "category": "coins",
+        "subcategory": "coins",
+        "unsplash_id": "1DZkajJh9Fs"
+      }
+    ],
+    "store": [
+      {
+        "url": "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=800&q=80",
+        "description": "Collection of gold necklaces displayed in jewelry store",
+        "category": "store",
+        "unsplash_id": "bwPPPYWqrLs"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+        "description": "Luxury jewelry and accessories in lit display case",
+        "category": "store",
+        "unsplash_id": "dbqCi54db5w"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?w=800&q=80",
+        "description": "Modern jewelry store interior with display cases",
+        "category": "store",
+        "unsplash_id": "jPaZgriwcm4"
+      }
+    ],
+    "lifestyle": [
+      {
+        "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+        "description": "Elegant woman with luxury jewelry in lifestyle setting",
+        "category": "lifestyle"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80",
+        "description": "Wedding hands with gold jewelry and mehndi",
+        "category": "lifestyle"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=800&q=80",
+        "description": "Woman in traditional attire with gold jewelry",
+        "category": "lifestyle"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80",
+        "description": "Fashion model portrait suitable for jewelry brand imagery",
+        "category": "lifestyle"
+      }
+    ]
+  },
+  "pexels": {
+    "indian_jewellery": "https://www.pexels.com/search/indian%20jewellery/",
+    "gold_necklace": "https://www.pexels.com/search/necklace%20gold/",
+    "jewelry": "https://www.pexels.com/search/jewelry/",
+    "note": "Pexels offers 10,000+ free Indian jewelry stock photos. Visit the search URLs above to browse and download specific images. All Pexels images are free for commercial use."
+  },
+  "competitor_reference": {
+    "tanishq": {
+      "sections": [
+        "Announcement Bar with promotional offers",
+        "Header with search, visual search, store locator, account, cart",
+        "Mega menu with 10 main categories",
+        "Hero banner carousel",
+        "Featured categories grid",
+        "New arrivals carousel",
+        "Named collections showcase (Elan, Maithili, etc.)",
+        "Wedding/Rivaah section with regional collections",
+        "Gifting section",
+        "Trust & certification section",
+        "Footer with sister brands"
+      ],
+      "notable_features": [
+        "Visual search (upload photo to find similar jewelry)",
+        "Find In Store availability checker",
+        "Digital Gold investment",
+        "Golden Harvest savings scheme",
+        "Ring sizing guide",
+        "Appointment booking",
+        "Price filter: <25K, 25K-50K, 50K-1L, 1L+"
+      ],
+      "url": "https://www.tanishq.co.in/"
+    },
+    "malabar": {
+      "sections": [
+        "Announcement/offer bar",
+        "Header with country selector (14 countries), search, wishlist, cart",
+        "Mega menu navigation",
+        "Hero banner carousel",
+        "Sub-brand showcase (Mine, Precia, Era, Divine, Ethnix, Starlet)",
+        "Category tiles",
+        "New arrivals section",
+        "Best sellers section",
+        "Fast ships section",
+        "Gold rate display (state-wise)",
+        "Store locator promo",
+        "Trust & certification section",
+        "Footer"
+      ],
+      "notable_features": [
+        "6 distinct sub-brands",
+        "Multi-country pricing and operations (14 countries)",
+        "Fast Ships quick delivery collection",
+        "Gold rate by state and country",
+        "6,655+ gold jewelry designs online"
+      ],
+      "url": "https://www.malabargoldanddiamonds.com/"
+    },
+    "kalyan": {
+      "sections": [
+        "Sticky promotional bar (3-slide carousel)",
+        "Header with Shop Online CTA, store locator, social links, gold rate, digital gold",
+        "Mega menu with brands, wedding, jewelry categories",
+        "Hero banner section",
+        "E-Store (Candere) promotion",
+        "Muhurat wedding section with regional customs",
+        "Diamond jewelry showcase",
+        "12-brand family grid",
+        "About us with 112-year legacy stats (140+ stores)",
+        "Leadership messages section",
+        "Kalyan News press releases",
+        "Blog integration (WordPress API)",
+        "YouTube media gallery (8+ videos)",
+        "Footer with 4 columns"
+      ],
+      "notable_features": [
+        "12 sub-brands targeting different aesthetics",
+        "10 regional wedding collections (Muhurat)",
+        "Omnichannel: Candere online + 140+ physical stores",
+        "Certificate validation tool",
+        "Gold Rate Protection Plan",
+        "Scratch card voucher gamification",
+        "Category-specific timed popup marketing",
+        "Fraud alert system",
+        "Celebrity brand ambassadors"
+      ],
+      "url": "https://www.kalyanjewellers.net/"
+    },
+    "joyalukkas": {
+      "sections": [
+        "Header with search, account, cart, gold scheme link",
+        "Main navigation menu",
+        "Hero banner carousel",
+        "Collection showcase (14+ brand collections)",
+        "Category browsing tiles",
+        "Featured products",
+        "Gold rate section",
+        "Schemes & plans (Easy Gold)",
+        "Corporate gifting section",
+        "Awards & recognition",
+        "Footer with about, products, promotions, careers"
+      ],
+      "notable_features": [
+        "14+ sub-brands including MS Dhoni Signature Edition",
+        "Easy Gold savings scheme",
+        "Corporate gifting B2B program",
+        "PWA progressive web app",
+        "ISO certifications, Dubai Quality Awards, National Jewellery Awards",
+        "Multi-region: India, US, GCC"
+      ],
+      "url": "https://www.joyalukkas.in/"
+    },
+    "rarecarat": {
+      "sections": [
+        "Header with search, wishlist, shopping bag",
+        "Value proposition banner (Save 40% with AI)",
+        "Hero with dual CTA: Start with diamond / Start with setting",
+        "6 product category grid",
+        "Designer collaboration (Christian Siriano)",
+        "Diamond shapes section (10 shapes)",
+        "Diamond type selector (Lab vs Natural)",
+        "Diamond size grid (1-5 carat)",
+        "Jewelry categories",
+        "Ring styles section (6 styles)",
+        "Popular styles product grid (24 items)",
+        "Email marketing section ($100 off)",
+        "Footer with diamond shapes, ring styles, sizes"
+      ],
+      "notable_features": [
+        "AI-powered price and quality scoring",
+        "Expert gemologist reviews",
+        "Lab-grown vs natural diamond comparison",
+        "Start with diamond OR Start with setting flow",
+        "Designer collaboration",
+        "Trustpilot 4.9 stars",
+        "Over 1 million certified stones",
+        "Transparent pricing with sale markers"
+      ],
+      "url": "https://www.rarecarat.com/"
+    }
+  },
+  "usage_notes": {
+    "unsplash_url_format": "https://images.unsplash.com/photo-{ID}?w={width}&q={quality}",
+    "recommended_sizes": {
+      "hero": "w=1600&q=80",
+      "product_card": "w=800&q=80",
+      "thumbnail": "w=400&q=80",
+      "product_detail": "w=1200&q=80"
+    },
+    "license": "Unsplash License - Free for commercial and non-commercial use. No attribution required (though appreciated).",
+    "pexels_license": "Pexels License - Free for commercial use. No attribution required."
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "id": "davis-resta",
+  "name": "Devi Shresta Gold & Diamonds",
+  "domain": "jewelry",
+  "tagline": "Where Tradition Meets Timeless Elegance",
+  "description": "Vijayawada's trusted gold and diamond jewelry store, known for unmatched craftsmanship and luxury jewelry for every occasion. From exquisite bridal collections to everyday elegance, we bring generations of expertise to every piece we create.",
+  "story": "Devi Shresta Gold & Diamonds is a premier jewelry destination in the heart of Vijayawada, dedicated to crafting and curating the finest gold and diamond jewelry. With deep roots in Andhra Pradesh's rich jewelry-making tradition, we combine time-honored techniques with contemporary designs to create pieces that celebrate life's most precious moments. Our master artisans pour their expertise into every creation, ensuring each piece meets the highest standards of purity, craftsmanship, and beauty.",
+  "logo": "/orgs/davis-resta/images/logo.png",
+  "phone": "+91-7337372922",
+  "email": "info@devishrestagold.com",
+  "address": {
+    "street": "Governorpet",
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "zip": "520002",
+    "country": "India",
+    "full": "Governorpet, Vijayawada, Andhra Pradesh 520002, India",
+    "coordinates": {
+      "lat": 16.5118602,
+      "lng": 80.6261918
+    }
+  },
+  "businessHours": [
+    { "day": "Monday", "open": "10:00", "close": "21:00", "closed": false },
+    { "day": "Tuesday", "open": "10:00", "close": "21:00", "closed": false },
+    { "day": "Wednesday", "open": "10:00", "close": "21:00", "closed": false },
+    { "day": "Thursday", "open": "10:00", "close": "21:00", "closed": false },
+    { "day": "Friday", "open": "10:00", "close": "21:00", "closed": false },
+    { "day": "Saturday", "open": "10:00", "close": "21:00", "closed": false },
+    { "day": "Sunday", "open": "10:00", "close": "21:00", "closed": false }
+  ],
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/devishrestagoldanddiamonds/",
+    "facebook": "https://www.facebook.com/devishrestagoldanddiamonds",
+    "whatsapp": "+917337372922",
+    "google_maps": "https://www.google.com/maps/place/Devi+Shresta+gold+and+diamonds/@16.5118602,80.6236169,17z"
+  },
+  "rating": 4.6,
+  "reviewCount": 185,
+  "currency": "INR",
+  "locale": "en-IN",
+  "features": [
+    "Custom Jewelry Design",
+    "BIS Hallmarked Gold",
+    "Certified Diamonds",
+    "Old Gold Exchange",
+    "EMI Available",
+    "Gold Savings Scheme",
+    "Free Lifetime Maintenance",
+    "Jewelry Repair & Restoration",
+    "Ring Resizing",
+    "Certificate of Authenticity",
+    "Transparent Pricing",
+    "Engraving Services"
+  ],
+  "categories": [
+    { "id": "necklaces", "name": "Necklaces", "slug": "necklaces", "description": "Traditional and contemporary gold & diamond necklaces, chokers, and haarams", "image": "https://images.unsplash.com/photo-1769500804057-ca1391bf4617?w=600&q=80", "order": 1 },
+    { "id": "bangles", "name": "Bangles & Bracelets", "slug": "bangles", "description": "Gold bangles, diamond bangles, kadas, and bracelets", "image": "https://images.unsplash.com/photo-1617191880362-aac615de3c26?w=600&q=80", "order": 2 },
+    { "id": "rings", "name": "Rings", "slug": "rings", "description": "Engagement rings, wedding bands, and fashion rings in gold and diamond", "image": "https://images.unsplash.com/photo-1509119546138-bccc862c68de?w=600&q=80", "order": 3 },
+    { "id": "earrings", "name": "Earrings", "slug": "earrings", "description": "Jhumkas, studs, drops, chandbalis, and diamond earrings", "image": "https://images.unsplash.com/photo-1629381565693-75f7aab090b9?w=600&q=80", "order": 4 },
+    { "id": "pendants", "name": "Pendants & Chains", "slug": "pendants", "description": "Gold chains, diamond pendants, and mangalsutra", "image": "https://images.unsplash.com/photo-1585711715631-1e6bf224f092?w=600&q=80", "order": 5 },
+    { "id": "bridal", "name": "Bridal Collections", "slug": "bridal", "description": "Complete bridal jewelry sets for Telugu, South Indian, and North Indian weddings", "image": "https://images.unsplash.com/photo-1594140700405-f401ff47b29e?w=600&q=80", "order": 6 },
+    { "id": "temple", "name": "Temple Jewelry", "slug": "temple", "description": "Traditional temple-inspired gold jewelry with Lakshmi, peacock, and mango motifs", "image": "https://images.unsplash.com/photo-1742891603547-950f510710d7?w=600&q=80", "order": 7 },
+    { "id": "mens", "name": "Men's Jewelry", "slug": "mens", "description": "Gold chains, rings, bracelets, and kada for men", "image": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80", "order": 8 },
+    { "id": "coins", "name": "Gold Coins & Bars", "slug": "coins", "description": "Investment-grade gold coins, bars, and Lakshmi coins", "image": "https://images.unsplash.com/photo-1772461286710-ea453f875bb7?w=600&q=80", "order": 9 }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "customerName": "Lakshmi Devi",
+      "location": "Vijayawada",
+      "rating": 5,
+      "title": "Exceptional bridal set",
+      "body": "Bought my daughter's bridal set from Devi Shresta. The craftsmanship is exceptional and the designs are unique. The staff was incredibly helpful in choosing the perfect pieces for the wedding.",
+      "verified": true,
+      "createdAt": "2025-11-15T00:00:00Z"
+    },
+    {
+      "id": "t2",
+      "customerName": "Rajesh Kumar",
+      "location": "Guntur",
+      "rating": 5,
+      "title": "Best gold jewelry in Vijayawada",
+      "body": "Best place for gold jewelry in Vijayawada. The purity is guaranteed and prices are very fair compared to big chain stores. I've been a loyal customer for years.",
+      "verified": true,
+      "createdAt": "2025-10-22T00:00:00Z"
+    },
+    {
+      "id": "t3",
+      "customerName": "Priya Sharma",
+      "location": "Vijayawada",
+      "rating": 5,
+      "title": "Dream engagement ring",
+      "body": "Got my engagement ring custom designed here. They turned my vision into reality beautifully. The diamond quality and gold work exceeded my expectations.",
+      "verified": true,
+      "createdAt": "2025-12-08T00:00:00Z"
+    },
+    {
+      "id": "t4",
+      "customerName": "Suresh Reddy",
+      "location": "Vijayawada",
+      "rating": 4,
+      "title": "Wonderful temple jewelry",
+      "body": "Great collection of traditional temple jewelry. My wife was thrilled with the necklace set we chose. Good exchange policy too.",
+      "verified": true,
+      "createdAt": "2026-01-10T00:00:00Z"
+    },
+    {
+      "id": "t5",
+      "customerName": "Anitha Rao",
+      "location": "Tenali",
+      "rating": 5,
+      "title": "Outstanding quality and fair prices",
+      "body": "We purchased gold bangles and a diamond pendant. The quality is outstanding and the making charges are reasonable. Highly recommend for anyone looking for authentic jewelry.",
+      "verified": true,
+      "createdAt": "2026-02-05T00:00:00Z"
+    }
+  ],
+  "trustBadges": [
+    {
+      "icon": "shield-check",
+      "title": "BIS Hallmarked",
+      "description": "Every gold piece is BIS hallmarked for guaranteed purity"
+    },
+    {
+      "icon": "gem",
+      "title": "Certified Diamonds",
+      "description": "All diamonds come with international certification"
+    },
+    {
+      "icon": "refresh-cw",
+      "title": "100% Exchange",
+      "description": "Full value exchange on all gold jewelry purchases"
+    },
+    {
+      "icon": "palette",
+      "title": "Custom Designs",
+      "description": "Get your dream jewelry custom crafted by our artisans"
+    },
+    {
+      "icon": "credit-card",
+      "title": "Easy EMI",
+      "description": "Flexible payment plans to make your purchase easier"
+    },
+    {
+      "icon": "wrench",
+      "title": "Lifetime Service",
+      "description": "Free cleaning, polishing, and maintenance for life"
+    }
+  ],
+  "seo": {
+    "title": "Devi Shresta Gold & Diamonds | Premium Jewelry Store in Vijayawada",
+    "description": "Discover exquisite gold and diamond jewelry at Devi Shresta, Vijayawada's trusted jeweler. Shop bridal collections, traditional designs, and modern pieces. BIS Hallmarked, 100% certified.",
+    "keywords": [
+      "gold jewelry Vijayawada",
+      "diamond jewelry Andhra Pradesh",
+      "bridal jewelry Vijayawada",
+      "wedding jewelry",
+      "gold necklace",
+      "diamond rings",
+      "temple jewelry",
+      "22K gold",
+      "hallmarked gold",
+      "Devi Shresta"
+    ]
+  },
+  "brand": {
+    "colors": {
+      "primary": "#7B1F3A",
+      "secondary": "#D4AF37",
+      "accent": "#B76E79",
+      "background": "#FFFDF7",
+      "surface": "#FFFFFF",
+      "text": "#1A1A1A",
+      "muted": "#6B6B6B",
+      "border": "#E8E0D5"
+    },
+    "fonts": {
+      "display": "Playfair Display",
+      "body": "Inter",
+      "accent": "Cormorant Garamond"
+    }
+  }
+}

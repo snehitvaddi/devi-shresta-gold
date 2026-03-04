@@ -1,0 +1,615 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "orgId": "davis-resta",
+      "name": "Lakshmi Temple Gold Necklace",
+      "slug": "lakshmi-temple-gold-necklace",
+      "description": "A magnificent traditional temple necklace featuring intricate Lakshmi motifs in 22K gold. Hand-crafted by skilled artisans using traditional techniques, this necklace is a symbol of prosperity and grace. Perfect for weddings and festive occasions.",
+      "shortDescription": "22K gold temple necklace with Lakshmi motifs",
+      "price": 285000,
+      "currency": "INR",
+      "category": "necklaces",
+      "subcategory": "temple",
+      "tags": ["gold", "temple", "traditional", "lakshmi", "wedding", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80", "alt": "Lakshmi Temple Gold Necklace - 22K gold traditional temple design", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-NCK-001",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "45g", "purity": "22K (916)", "style": "Temple Jewelry" }
+    },
+    {
+      "id": "prod-002",
+      "orgId": "davis-resta",
+      "name": "Diamond Choker Necklace Set",
+      "slug": "diamond-choker-necklace-set",
+      "description": "A breathtaking diamond choker necklace set in 18K white gold with matching earrings. Features VS-clarity diamonds in a floral pattern design. The perfect statement piece for brides and special celebrations.",
+      "shortDescription": "18K white gold diamond choker with matching earrings",
+      "price": 425000,
+      "currency": "INR",
+      "category": "necklaces",
+      "subcategory": "diamond",
+      "tags": ["diamond", "choker", "bridal", "18K", "white gold", "set"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?w=800&q=80", "alt": "Diamond Choker Necklace Set - 18K white gold with VS diamonds", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-NCK-002",
+      "metadata": { "metal": "18K White Gold", "weight": "38g", "purity": "18K (750)", "diamonds": "3.5 carats total", "clarity": "VS" }
+    },
+    {
+      "id": "prod-003",
+      "orgId": "davis-resta",
+      "name": "Traditional Gold Haarams",
+      "slug": "traditional-gold-haarams",
+      "description": "A stunning long gold haarams (long necklace) in 22K gold with traditional South Indian design. Features mango motifs (paisley) and intricate filigree work. An essential piece for Telugu bridal trousseau.",
+      "shortDescription": "22K gold long haarams with mango motifs",
+      "price": 350000,
+      "currency": "INR",
+      "category": "necklaces",
+      "subcategory": "gold",
+      "tags": ["gold", "haarams", "traditional", "south indian", "bridal", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80", "alt": "Traditional Gold Haarams - 22K gold long necklace with mango motifs", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-NCK-003",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "55g", "purity": "22K (916)", "length": "30 inches" }
+    },
+    {
+      "id": "prod-004",
+      "orgId": "davis-resta",
+      "name": "Gold Bangles Set - Floral Design",
+      "slug": "gold-bangles-set-floral",
+      "description": "An elegant set of 4 gold bangles with hand-engraved floral patterns in 22K gold. These lightweight yet sturdy bangles feature intricate detailing that catches the light beautifully. Ideal for daily wear and festive occasions.",
+      "shortDescription": "Set of 4 hand-engraved 22K gold floral bangles",
+      "price": 165000,
+      "currency": "INR",
+      "category": "bangles",
+      "subcategory": "gold",
+      "tags": ["gold", "bangles", "floral", "set", "daily wear", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=80", "alt": "Gold Bangles Set Floral Design - 22K gold traditional bangles", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-BNG-001",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "32g (total set)", "purity": "22K (916)", "quantity": "Set of 4", "size": "2.4 inches" }
+    },
+    {
+      "id": "prod-005",
+      "orgId": "davis-resta",
+      "name": "Diamond Tennis Bracelet",
+      "slug": "diamond-tennis-bracelet",
+      "description": "A classic diamond tennis bracelet set in 18K white gold. Features 40 round brilliant cut diamonds with excellent sparkle. Secured with a box clasp and safety chain for worry-free wear.",
+      "shortDescription": "18K white gold diamond tennis bracelet, 2.5ct",
+      "price": 195000,
+      "currency": "INR",
+      "category": "bangles",
+      "subcategory": "diamond",
+      "tags": ["diamond", "bracelet", "tennis", "18K", "white gold"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&q=80", "alt": "Diamond Tennis Bracelet - 18K white gold with 2.5ct diamonds", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-BNG-002",
+      "metadata": { "metal": "18K White Gold", "weight": "15g", "purity": "18K (750)", "diamonds": "2.5 carats total", "stones": "40 round brilliant" }
+    },
+    {
+      "id": "prod-006",
+      "orgId": "davis-resta",
+      "name": "Gold Kada - Antique Finish",
+      "slug": "gold-kada-antique-finish",
+      "description": "A bold antique-finish gold kada (thick bangle) in 22K gold with traditional temple motifs. The oxidized detailing gives it a vintage royal look. A statement piece for weddings and festivals.",
+      "shortDescription": "22K gold antique finish kada with temple motifs",
+      "price": 125000,
+      "currency": "INR",
+      "category": "bangles",
+      "subcategory": "kada",
+      "tags": ["gold", "kada", "antique", "temple", "traditional", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80", "alt": "Gold Kada Antique Finish - 22K gold with temple motifs", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-BNG-003",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "28g", "purity": "22K (916)", "finish": "Antique oxidized" }
+    },
+    {
+      "id": "prod-007",
+      "orgId": "davis-resta",
+      "name": "Solitaire Diamond Engagement Ring",
+      "slug": "solitaire-diamond-engagement-ring",
+      "description": "A stunning solitaire engagement ring featuring a 0.75 carat round brilliant diamond set in 18K white gold with a six-prong setting. IGI certified for quality assurance. The perfect symbol of your love.",
+      "shortDescription": "0.75ct solitaire diamond ring, 18K white gold, IGI certified",
+      "price": 175000,
+      "currency": "INR",
+      "category": "rings",
+      "subcategory": "engagement",
+      "tags": ["diamond", "solitaire", "engagement", "18K", "white gold", "IGI"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80", "alt": "Solitaire Diamond Engagement Ring - 0.75ct IGI certified", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-RNG-001",
+      "metadata": { "metal": "18K White Gold", "weight": "4.5g", "purity": "18K (750)", "diamond": "0.75ct Round Brilliant", "clarity": "VS1", "color": "F", "certification": "IGI" }
+    },
+    {
+      "id": "prod-008",
+      "orgId": "davis-resta",
+      "name": "Gold Wedding Band - Classic",
+      "slug": "gold-wedding-band-classic",
+      "description": "A timeless 22K yellow gold wedding band with a smooth, polished finish. Comfortable flat-profile design suitable for daily wear. Available in multiple sizes. A perfect symbol of your commitment.",
+      "shortDescription": "22K yellow gold classic wedding band",
+      "price": 32000,
+      "currency": "INR",
+      "category": "rings",
+      "subcategory": "wedding",
+      "tags": ["gold", "wedding band", "classic", "22K", "men", "women"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=800&q=80", "alt": "Gold Wedding Band Classic - 22K yellow gold polished", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-RNG-002",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "5g", "purity": "22K (916)", "width": "4mm" }
+    },
+    {
+      "id": "prod-009",
+      "orgId": "davis-resta",
+      "name": "Diamond Cluster Ring",
+      "slug": "diamond-cluster-ring",
+      "description": "An elegant diamond cluster ring featuring seven round brilliant diamonds arranged in a flower pattern, set in 18K rose gold. A stunning everyday luxury piece with impressive sparkle.",
+      "shortDescription": "18K rose gold diamond cluster flower ring",
+      "price": 68000,
+      "currency": "INR",
+      "category": "rings",
+      "subcategory": "fashion",
+      "tags": ["diamond", "cluster", "rose gold", "18K", "fashion", "flower"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1608042314453-ae338d80c427?w=800&q=80", "alt": "Diamond Cluster Ring - 18K rose gold floral pattern", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-RNG-003",
+      "metadata": { "metal": "18K Rose Gold", "weight": "3.8g", "purity": "18K (750)", "diamonds": "0.50ct total" }
+    },
+    {
+      "id": "prod-010",
+      "orgId": "davis-resta",
+      "name": "Gold Jhumka Earrings - Traditional",
+      "slug": "gold-jhumka-earrings-traditional",
+      "description": "Classic South Indian gold jhumka earrings in 22K gold with intricate bead work and hanging gold balls. A timeless design that complements both traditional sarees and modern outfits.",
+      "shortDescription": "22K gold traditional jhumka earrings with bead work",
+      "price": 85000,
+      "currency": "INR",
+      "category": "earrings",
+      "subcategory": "jhumkas",
+      "tags": ["gold", "jhumka", "traditional", "south indian", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=800&q=80", "alt": "Gold Jhumka Earrings Traditional - 22K gold with bead work", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-EAR-001",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "18g (pair)", "purity": "22K (916)", "style": "Jhumka" }
+    },
+    {
+      "id": "prod-011",
+      "orgId": "davis-resta",
+      "name": "Diamond Stud Earrings",
+      "slug": "diamond-stud-earrings",
+      "description": "Classic diamond stud earrings featuring matched pair of 0.50ct each round brilliant diamonds in 18K white gold four-prong settings. IGI certified. Secured with screw-back posts.",
+      "shortDescription": "1.0ct total diamond studs, 18K white gold, IGI certified",
+      "price": 145000,
+      "currency": "INR",
+      "category": "earrings",
+      "subcategory": "studs",
+      "tags": ["diamond", "studs", "18K", "white gold", "IGI", "classic"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80", "alt": "Diamond Stud Earrings - 1.0ct IGI certified in 18K white gold", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-EAR-002",
+      "metadata": { "metal": "18K White Gold", "weight": "3g (pair)", "purity": "18K (750)", "diamonds": "1.0ct total (0.50ct each)", "clarity": "VS1", "certification": "IGI" }
+    },
+    {
+      "id": "prod-012",
+      "orgId": "davis-resta",
+      "name": "Chandbali Gold Earrings",
+      "slug": "chandbali-gold-earrings",
+      "description": "Exquisite chandbali (moon-shaped) earrings in 22K gold with pearl drops and meenakari enamel work. Inspired by Hyderabadi heritage craftsmanship. An absolute showstopper for weddings and receptions.",
+      "shortDescription": "22K gold chandbali earrings with pearl drops and meenakari",
+      "price": 115000,
+      "currency": "INR",
+      "category": "earrings",
+      "subcategory": "chandbali",
+      "tags": ["gold", "chandbali", "meenakari", "pearl", "heritage", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1629224316810-9d8805b95e76?w=800&q=80", "alt": "Chandbali Gold Earrings - 22K gold with pearl drops and meenakari", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-EAR-003",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "22g (pair)", "purity": "22K (916)", "style": "Chandbali", "embellishment": "Pearl drops, Meenakari" }
+    },
+    {
+      "id": "prod-013",
+      "orgId": "davis-resta",
+      "name": "Gold Chain with Diamond Pendant",
+      "slug": "gold-chain-diamond-pendant",
+      "description": "A delicate 18K gold chain with a stunning diamond pendant in a floral design. Features 0.30ct of diamonds in micro-pave setting. An elegant everyday piece that adds sophistication to any outfit.",
+      "shortDescription": "18K gold chain with 0.30ct diamond floral pendant",
+      "price": 55000,
+      "currency": "INR",
+      "category": "pendants",
+      "subcategory": "diamond",
+      "tags": ["diamond", "pendant", "chain", "18K", "gold", "floral", "daily wear"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80", "alt": "Gold Chain with Diamond Pendant - 18K gold floral design", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-PND-001",
+      "metadata": { "metal": "18K Yellow Gold", "weight": "6g (chain + pendant)", "purity": "18K (750)", "diamonds": "0.30ct", "chain_length": "18 inches" }
+    },
+    {
+      "id": "prod-014",
+      "orgId": "davis-resta",
+      "name": "Black Beads Mangalsutra - Diamond",
+      "slug": "black-beads-mangalsutra-diamond",
+      "description": "A beautiful modern mangalsutra with black beads and a diamond-studded gold pendant in 18K gold. The contemporary design features a floral diamond center that blends tradition with modern style.",
+      "shortDescription": "18K gold diamond mangalsutra with black beads",
+      "price": 78000,
+      "currency": "INR",
+      "category": "pendants",
+      "subcategory": "mangalsutra",
+      "tags": ["mangalsutra", "diamond", "black beads", "18K", "bridal", "traditional"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80", "alt": "Black Beads Mangalsutra Diamond - 18K gold with black beads", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-PND-002",
+      "metadata": { "metal": "18K Yellow Gold", "weight": "12g", "purity": "18K (750)", "diamonds": "0.25ct", "style": "Mangalsutra" }
+    },
+    {
+      "id": "prod-015",
+      "orgId": "davis-resta",
+      "name": "Complete Bridal Gold Set - Telugu Traditional",
+      "slug": "complete-bridal-gold-set-telugu",
+      "description": "A magnificent complete Telugu bridal jewelry set in 22K gold including: necklace (choker), long haarams, jhumka earrings, bangles (set of 6), maang tikka, and nose ring. Features traditional temple motifs with Lakshmi and peacock designs. A complete bridal trousseau solution.",
+      "shortDescription": "Complete 22K gold Telugu bridal set - 7 pieces",
+      "price": 850000,
+      "currency": "INR",
+      "category": "bridal",
+      "subcategory": "complete-set",
+      "tags": ["bridal", "wedding", "complete set", "telugu", "traditional", "gold", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80", "alt": "Complete Bridal Gold Set Telugu Traditional - 22K gold 7-piece set", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-BRD-001",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "150g (total set)", "purity": "22K (916)", "pieces": "7 pieces", "style": "Telugu Traditional" }
+    },
+    {
+      "id": "prod-016",
+      "orgId": "davis-resta",
+      "name": "Diamond Bridal Necklace Set",
+      "slug": "diamond-bridal-necklace-set",
+      "description": "An opulent diamond bridal necklace set in 18K gold featuring cascading diamond floral clusters. Set includes necklace and matching chandbali earrings. Total diamond weight 5 carats. A breathtaking centerpiece for the modern bride.",
+      "shortDescription": "18K gold diamond bridal necklace set with 5ct diamonds",
+      "price": 650000,
+      "currency": "INR",
+      "category": "bridal",
+      "subcategory": "diamond",
+      "tags": ["diamond", "bridal", "necklace set", "18K", "wedding", "luxury"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1515562141589-67f0d999b36b?w=800&q=80", "alt": "Diamond Bridal Necklace Set - 18K gold with 5ct diamonds", "isPrimary": true, "order": 1 }
+      ],
+      "featured": true,
+      "inStock": true,
+      "sku": "DS-BRD-002",
+      "metadata": { "metal": "18K Yellow Gold", "weight": "65g (total set)", "purity": "18K (750)", "diamonds": "5.0ct total", "pieces": "2 pieces (necklace + earrings)" }
+    },
+    {
+      "id": "prod-017",
+      "orgId": "davis-resta",
+      "name": "Temple Peacock Gold Necklace",
+      "slug": "temple-peacock-gold-necklace",
+      "description": "A stunning temple-style gold necklace featuring peacock motifs with ruby and emerald accents in 22K gold. Hand-crafted using traditional nakshi technique. The colorful stone accents bring the peacock design to life.",
+      "shortDescription": "22K gold peacock temple necklace with ruby & emerald",
+      "price": 225000,
+      "currency": "INR",
+      "category": "temple",
+      "subcategory": "necklace",
+      "tags": ["gold", "temple", "peacock", "ruby", "emerald", "nakshi", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80", "alt": "Temple Peacock Gold Necklace - 22K gold with ruby and emerald", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-TMP-001",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "38g", "purity": "22K (916)", "stones": "Ruby, Emerald accents", "technique": "Nakshi" }
+    },
+    {
+      "id": "prod-018",
+      "orgId": "davis-resta",
+      "name": "Temple Kemp Stone Choker",
+      "slug": "temple-kemp-stone-choker",
+      "description": "A traditional temple choker necklace with kemp stones (red and green) set in 22K gold. Features Lakshmi pendant with mango-shaped links. Inspired by ancient South Indian temple art and Bharatanatyam dance jewelry.",
+      "shortDescription": "22K gold temple choker with kemp stones and Lakshmi pendant",
+      "price": 195000,
+      "currency": "INR",
+      "category": "temple",
+      "subcategory": "choker",
+      "tags": ["gold", "temple", "kemp", "choker", "lakshmi", "traditional", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=800&q=80", "alt": "Temple Kemp Stone Choker - 22K gold with kemp stones", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-TMP-002",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "35g", "purity": "22K (916)", "stones": "Kemp (Ruby, Emerald)", "style": "Temple Choker" }
+    },
+    {
+      "id": "prod-019",
+      "orgId": "davis-resta",
+      "name": "Men's Gold Chain - Bismark Design",
+      "slug": "mens-gold-chain-bismark",
+      "description": "A bold men's gold chain in 22K gold with classic bismark link design. Heavy and substantial with a smooth polished finish. Features a secure lobster clasp. A timeless accessory for the modern man.",
+      "shortDescription": "22K gold men's bismark chain, 24 inches",
+      "price": 185000,
+      "currency": "INR",
+      "category": "mens",
+      "subcategory": "chains",
+      "tags": ["gold", "chain", "mens", "bismark", "22K", "heavy"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&q=80", "alt": "Mens Gold Chain Bismark Design - 22K gold 24 inch", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-MEN-001",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "30g", "purity": "22K (916)", "length": "24 inches", "style": "Bismark" }
+    },
+    {
+      "id": "prod-020",
+      "orgId": "davis-resta",
+      "name": "Men's Gold Ring - Signet Style",
+      "slug": "mens-gold-ring-signet",
+      "description": "A sophisticated men's signet ring in 22K yellow gold with a flat polished face. Can be custom engraved with initials or family crest. A classic gentleman's ring with substantial weight and presence.",
+      "shortDescription": "22K gold men's signet ring, engravable",
+      "price": 45000,
+      "currency": "INR",
+      "category": "mens",
+      "subcategory": "rings",
+      "tags": ["gold", "ring", "mens", "signet", "22K", "engravable"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1598560917505-59a3ad559071?w=800&q=80", "alt": "Mens Gold Ring Signet Style - 22K gold engravable", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-MEN-002",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "8g", "purity": "22K (916)", "style": "Signet", "customizable": true }
+    },
+    {
+      "id": "prod-021",
+      "orgId": "davis-resta",
+      "name": "Lakshmi Gold Coin - 10 Grams",
+      "slug": "lakshmi-gold-coin-10g",
+      "description": "A 24K pure gold coin featuring Goddess Lakshmi on one side and Om symbol on the reverse. 99.9% purity (999 fine gold). BIS hallmarked. Perfect for Dhanteras, Akshaya Tritiya, and as an investment.",
+      "shortDescription": "10g 24K pure gold Lakshmi coin, BIS hallmarked",
+      "price": 78500,
+      "currency": "INR",
+      "category": "coins",
+      "subcategory": "coins",
+      "tags": ["gold coin", "24K", "lakshmi", "investment", "pure gold", "BIS"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1589787168422-831837e0ed2c?w=800&q=80", "alt": "Lakshmi Gold Coin 10 Grams - 24K pure gold BIS hallmarked", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-CON-001",
+      "metadata": { "metal": "24K Pure Gold", "weight": "10g", "purity": "24K (999)", "certification": "BIS Hallmarked" }
+    },
+    {
+      "id": "prod-022",
+      "orgId": "davis-resta",
+      "name": "Gold Bar - 50 Grams",
+      "slug": "gold-bar-50g",
+      "description": "A 24K pure gold bar weighing 50 grams. 99.9% purity with BIS hallmark and serial number. Ideal for investment and gifting on auspicious occasions. Comes in tamper-proof packaging.",
+      "shortDescription": "50g 24K pure gold bar, BIS hallmarked, tamper-proof",
+      "price": 392500,
+      "currency": "INR",
+      "category": "coins",
+      "subcategory": "bars",
+      "tags": ["gold bar", "24K", "investment", "pure gold", "BIS", "50g"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80", "alt": "Gold Bar 50 Grams - 24K pure gold bars stacked", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-CON-002",
+      "metadata": { "metal": "24K Pure Gold", "weight": "50g", "purity": "24K (999)", "certification": "BIS Hallmarked", "packaging": "Tamper-proof" }
+    },
+    {
+      "id": "prod-023",
+      "orgId": "davis-resta",
+      "name": "Maang Tikka - Gold with Kundan",
+      "slug": "maang-tikka-gold-kundan",
+      "description": "A beautiful maang tikka (head ornament) in 22K gold with kundan stone setting. Features a central polki diamond surrounded by emerald and ruby stones. An essential bridal accessory for the Indian bride.",
+      "shortDescription": "22K gold kundan maang tikka with polki and colored stones",
+      "price": 42000,
+      "currency": "INR",
+      "category": "bridal",
+      "subcategory": "accessories",
+      "tags": ["maang tikka", "gold", "kundan", "polki", "bridal", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1594552072238-5c4ed37432a8?w=800&q=80", "alt": "Maang Tikka Gold with Kundan - 22K gold bridal head ornament", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-BRD-003",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "8g", "purity": "22K (916)", "stones": "Polki, Emerald, Ruby (Kundan setting)" }
+    },
+    {
+      "id": "prod-024",
+      "orgId": "davis-resta",
+      "name": "Daily Wear Diamond Earrings",
+      "slug": "daily-wear-diamond-earrings",
+      "description": "Elegant yet understated diamond drop earrings perfect for everyday wear. Set in 18K yellow gold with 0.20ct diamonds in a geometric design. Lightweight and comfortable for all-day wear.",
+      "shortDescription": "18K gold daily wear diamond drop earrings, 0.20ct",
+      "price": 28000,
+      "currency": "INR",
+      "category": "earrings",
+      "subcategory": "daily-wear",
+      "tags": ["diamond", "earrings", "daily wear", "18K", "lightweight", "office"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=800&q=80", "alt": "Daily Wear Diamond Earrings - 18K gold lightweight drops", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-EAR-004",
+      "metadata": { "metal": "18K Yellow Gold", "weight": "2.5g (pair)", "purity": "18K (750)", "diamonds": "0.20ct total" }
+    },
+    {
+      "id": "prod-025",
+      "orgId": "davis-resta",
+      "name": "Gold Nose Ring - Traditional",
+      "slug": "gold-nose-ring-traditional",
+      "description": "A delicate traditional gold nose ring (nath) in 22K gold with small pearl drops. Features a thin wire for comfortable wearing. Available in both clip-on and pierced versions.",
+      "shortDescription": "22K gold traditional nose ring with pearl drops",
+      "price": 12000,
+      "currency": "INR",
+      "category": "bridal",
+      "subcategory": "nose-ring",
+      "tags": ["nose ring", "nath", "gold", "pearl", "traditional", "bridal", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1610173826608-e2a51e274e45?w=800&q=80", "alt": "Gold Nose Ring Traditional - 22K gold nath with pearl drops", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-BRD-004",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "3g", "purity": "22K (916)", "embellishment": "Pearl drops" }
+    },
+    {
+      "id": "prod-026",
+      "orgId": "davis-resta",
+      "name": "Diamond Solitaire Pendant",
+      "slug": "diamond-solitaire-pendant",
+      "description": "A stunning 0.50ct solitaire diamond pendant in 18K white gold with a delicate bail design. The diamond is set in a four-prong basket setting for maximum light performance. Comes with a matching 18-inch chain.",
+      "shortDescription": "0.50ct diamond solitaire pendant, 18K white gold",
+      "price": 95000,
+      "currency": "INR",
+      "category": "pendants",
+      "subcategory": "diamond",
+      "tags": ["diamond", "solitaire", "pendant", "18K", "white gold"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&q=80", "alt": "Diamond Solitaire Pendant - 0.50ct in 18K white gold", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-PND-003",
+      "metadata": { "metal": "18K White Gold", "weight": "4g (pendant + chain)", "purity": "18K (750)", "diamond": "0.50ct", "clarity": "VS1", "chain_length": "18 inches" }
+    },
+    {
+      "id": "prod-027",
+      "orgId": "davis-resta",
+      "name": "Gold Anklets - Payal Set",
+      "slug": "gold-anklets-payal-set",
+      "description": "A pair of dainty 22K gold anklets (payal) with small hanging bells and traditional chain design. The gentle tinkling sound adds charm to every step. An essential piece for brides and festive occasions.",
+      "shortDescription": "22K gold anklet pair with bells, traditional design",
+      "price": 35000,
+      "currency": "INR",
+      "category": "bridal",
+      "subcategory": "anklets",
+      "tags": ["anklet", "payal", "gold", "bells", "traditional", "bridal", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80", "alt": "Gold Anklets Payal Set - 22K gold with bells", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-BRD-005",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "15g (pair)", "purity": "22K (916)", "style": "Traditional with bells" }
+    },
+    {
+      "id": "prod-028",
+      "orgId": "davis-resta",
+      "name": "Lightweight Gold Necklace - Daily Wear",
+      "slug": "lightweight-gold-necklace-daily",
+      "description": "A delicate lightweight gold necklace in 22K gold, perfect for daily wear. Features a simple yet elegant linked chain design with a small pendant drop. Comfortable enough for all-day wear at work or casual outings.",
+      "shortDescription": "22K gold lightweight daily wear necklace with pendant",
+      "price": 48000,
+      "currency": "INR",
+      "category": "necklaces",
+      "subcategory": "daily-wear",
+      "tags": ["gold", "necklace", "lightweight", "daily wear", "office", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=800&q=80", "alt": "Lightweight Gold Necklace Daily Wear - 22K gold delicate chain", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-NCK-004",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "8g", "purity": "22K (916)", "length": "16 inches" }
+    },
+    {
+      "id": "prod-029",
+      "orgId": "davis-resta",
+      "name": "Men's Gold Bracelet - Heavy Link",
+      "slug": "mens-gold-bracelet-heavy-link",
+      "description": "A substantial men's gold bracelet in 22K gold featuring a bold flat curb link design. Polished to a high shine with a secure box clasp. Makes a powerful style statement.",
+      "shortDescription": "22K gold men's heavy link bracelet, 25g",
+      "price": 155000,
+      "currency": "INR",
+      "category": "mens",
+      "subcategory": "bracelets",
+      "tags": ["gold", "bracelet", "mens", "heavy", "curb link", "22K"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=800&q=80", "alt": "Mens Gold Bracelet Heavy Link - 22K gold curb link", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-MEN-003",
+      "metadata": { "metal": "22K Yellow Gold", "weight": "25g", "purity": "22K (916)", "length": "8 inches", "style": "Flat Curb Link" }
+    },
+    {
+      "id": "prod-030",
+      "orgId": "davis-resta",
+      "name": "Lakshmi Gold Coin - 5 Grams",
+      "slug": "lakshmi-gold-coin-5g",
+      "description": "A 24K pure gold coin (5 grams) featuring Goddess Lakshmi. 99.9% purity with BIS hallmark. An auspicious gift for festivals like Dhanteras, Diwali, and Akshaya Tritiya. Also ideal as a starter investment.",
+      "shortDescription": "5g 24K pure gold Lakshmi coin, BIS hallmarked",
+      "price": 39250,
+      "currency": "INR",
+      "category": "coins",
+      "subcategory": "coins",
+      "tags": ["gold coin", "24K", "lakshmi", "investment", "gift", "BIS", "5g"],
+      "images": [
+        { "url": "https://images.unsplash.com/photo-1607292803062-5b8ff0531b88?w=800&q=80", "alt": "Lakshmi Gold Coin 5 Grams - 24K pure gold BIS hallmarked", "isPrimary": true, "order": 1 }
+      ],
+      "featured": false,
+      "inStock": true,
+      "sku": "DS-CON-003",
+      "metadata": { "metal": "24K Pure Gold", "weight": "5g", "purity": "24K (999)", "certification": "BIS Hallmarked" }
+    }
+  ],
+  "categories": [
+    { "id": "necklaces", "name": "Necklaces", "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80", "description": "Traditional and contemporary gold & diamond necklaces", "productCount": 4 },
+    { "id": "bangles", "name": "Bangles & Bracelets", "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80", "description": "Gold bangles, diamond bracelets, and kadas", "productCount": 3 },
+    { "id": "rings", "name": "Rings", "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80", "description": "Engagement, wedding, and fashion rings", "productCount": 3 },
+    { "id": "earrings", "name": "Earrings", "image": "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=600&q=80", "description": "Jhumkas, studs, chandbalis, and drop earrings", "productCount": 4 },
+    { "id": "pendants", "name": "Pendants & Chains", "image": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&q=80", "description": "Diamond pendants, gold chains, and mangalsutra", "productCount": 3 },
+    { "id": "bridal", "name": "Bridal Collections", "image": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=600&q=80", "description": "Complete bridal sets and wedding accessories", "productCount": 5 },
+    { "id": "temple", "name": "Temple Jewelry", "image": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=600&q=80", "description": "Traditional temple-inspired gold jewelry", "productCount": 2 },
+    { "id": "mens", "name": "Men's Jewelry", "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=600&q=80", "description": "Gold chains, rings, and bracelets for men", "productCount": 3 },
+    { "id": "coins", "name": "Gold Coins & Bars", "image": "https://images.unsplash.com/photo-1589787168422-831837e0ed2c?w=600&q=80", "description": "Investment-grade gold coins and bars", "productCount": 3 }
+  ]
+}

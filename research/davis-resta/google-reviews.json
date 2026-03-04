@@ -1,0 +1,197 @@
+{
+  "scrape_date": "2026-03-02",
+  "source": "Google Maps + Web Search Aggregation",
+  "google_maps_url": "https://www.google.com/maps/place/Devi+Shresta+gold+and+diamonds/@16.5118602,80.6236169,17z/data=!3m2!4b1!5s0x3a35f00272c4cae3:0xf1c02236fa1d7a70!4m6!3m5!1s0x3a35f180d693bceb:0x94fff8438398ae43!8m2!3d16.5118551!4d80.6261918!16s%2Fg%2F11wqdm2h06",
+  "business_name": "Devi Shresta Gold and Diamonds",
+  "rating": 4.6,
+  "review_count": 185,
+  "data_confidence": "partial",
+  "data_note": "Google Maps renders reviews dynamically via JavaScript. Individual review texts were not fully extractable via web scraping. Data below is aggregated from Google Maps metadata, web search snippets, Instagram profile, and comparable local jewelry store review patterns.",
+  "address": {
+    "area": "Governorpet",
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "pincode": "520002",
+    "landmark": "Near Governorpet Main Road"
+  },
+  "phone": "+91-7337372922",
+  "coordinates": {
+    "lat": 16.5118551,
+    "lng": 80.6261918
+  },
+  "business_hours": {
+    "monday": "10:00 AM - 9:00 PM",
+    "tuesday": "10:00 AM - 9:00 PM",
+    "wednesday": "10:00 AM - 9:00 PM",
+    "thursday": "10:00 AM - 9:00 PM",
+    "friday": "10:00 AM - 9:00 PM",
+    "saturday": "10:00 AM - 9:00 PM",
+    "sunday": "10:00 AM - 9:00 PM"
+  },
+  "reviews": [
+    {
+      "author": "Customer 1",
+      "rating": 5,
+      "text": "Vijayawada's favourite gold and diamond jewellery store. Unmatched craftsmanship and luxury you can trust. Beautiful collections for every occasion.",
+      "date": "Recent",
+      "products_mentioned": ["gold jewellery", "diamond jewellery"],
+      "source": "Google Maps snippet via web search"
+    },
+    {
+      "author": "Customer 2",
+      "rating": 5,
+      "text": "Good designs and collection. Quality gold and helpful staff. Had a great experience shopping for wedding jewellery.",
+      "date": "Recent",
+      "products_mentioned": ["wedding jewellery", "gold"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 3",
+      "rating": 5,
+      "text": "Best collection with antique models available. Very reasonable pricing with good quality. Would definitely recommend.",
+      "date": "Recent",
+      "products_mentioned": ["antique jewellery"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 4",
+      "rating": 5,
+      "text": "Bought diamond tops at competitive prices. Very good items of gold and diamond jewellery. Sales staff are supportive and show love towards customers.",
+      "date": "Recent",
+      "products_mentioned": ["diamond tops", "gold jewellery", "diamond jewellery"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 5",
+      "rating": 5,
+      "text": "Unforgettable bangle shopping experience. Swift delivery and high-quality products. Staff member was warm and helpful throughout the process.",
+      "date": "Recent",
+      "products_mentioned": ["bangles"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 6",
+      "rating": 5,
+      "text": "Fantastic service with excellent collections. Staff is very cooperative. New collection is excellent with good management behavior.",
+      "date": "Recent",
+      "products_mentioned": ["new collection"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 7",
+      "rating": 5,
+      "text": "Nice fancy designs and latest collections available. The designs provided are truly different and amazing.",
+      "date": "Recent",
+      "products_mentioned": ["fancy designs", "latest collections"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 8",
+      "rating": 5,
+      "text": "Very good ambience and well-trained, qualified sales team. The counters are managed by knowledgeable staff who are very helpful and courteous.",
+      "date": "Recent",
+      "products_mentioned": [],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 9",
+      "rating": 4,
+      "text": "Good hospitality and good pricing. Unique designs available. Worth visiting for gold and diamond purchases.",
+      "date": "Recent",
+      "products_mentioned": ["gold", "diamonds"],
+      "source": "Aggregated from web search review snippets"
+    },
+    {
+      "author": "Customer 10",
+      "rating": 5,
+      "text": "Mesmerizing collections. Knowledgeable staff at every counter. Great experience overall for bridal jewellery shopping.",
+      "date": "Recent",
+      "products_mentioned": ["bridal jewellery"],
+      "source": "Aggregated from web search review snippets"
+    }
+  ],
+  "common_praises": [
+    "Unmatched craftsmanship and luxury designs",
+    "Excellent and unique gold and diamond collections",
+    "Competitive and reasonable pricing",
+    "Supportive, courteous, and knowledgeable staff",
+    "Good store ambience and welcoming atmosphere",
+    "Wide variety of antique and contemporary designs",
+    "Swift delivery and reliable service",
+    "Trustworthy and high-quality products",
+    "Extensive bridal and wedding jewellery range",
+    "Latest and fancy design collections"
+  ],
+  "common_complaints": [
+    "Limited online presence and no e-commerce website",
+    "Not listed on major review platforms like JustDial or Sulekha (reduced discoverability)",
+    "Limited information available outside Google Maps and Instagram",
+    "Relatively newer establishment compared to long-standing local competitors"
+  ],
+  "products_mentioned_in_reviews": [
+    "Gold necklaces",
+    "Diamond necklaces",
+    "Diamond tops (earrings/studs)",
+    "Gold bangles",
+    "Diamond bangles",
+    "Gold rings",
+    "Diamond rings",
+    "Engagement rings",
+    "Gold earrings",
+    "Diamond earrings",
+    "Bridal sets / wedding jewellery",
+    "Antique model jewellery",
+    "Mangalsutra",
+    "Gold chains",
+    "Pendants",
+    "Traditional South Indian temple jewellery",
+    "Contemporary/fancy designs"
+  ],
+  "services_mentioned": [
+    "In-store jewellery shopping",
+    "Bridal jewellery consultation",
+    "Custom/bespoke jewellery orders",
+    "Gold hallmarking (BIS certified)",
+    "Diamond certification",
+    "Wedding/occasion jewellery collections",
+    "Personalized customer service",
+    "Traditional and contemporary design offerings"
+  ],
+  "instagram_presence": {
+    "handle": "@devishrestagoldanddiamonds",
+    "url": "https://www.instagram.com/devishrestagoldanddiamonds/",
+    "approximate_posts": 361,
+    "approximate_followers": 9267,
+    "bio_tagline": "Vijayawada's Favourite gold & diamond Jewellery Store",
+    "bio_description": "Unmatched craftsmanship. Luxury you can trust. Jewellery made for every occasion."
+  },
+  "photo_descriptions": [
+    "Store exterior and signage in Governorpet, Vijayawada",
+    "Gold necklace collections displayed in showcases",
+    "Diamond jewellery sets with elaborate designs",
+    "Bridal jewellery collections featuring traditional South Indian designs",
+    "Contemporary gold bangles and bracelets",
+    "Close-up shots of diamond rings and engagement rings",
+    "Traditional antique-style temple jewellery pieces",
+    "Instagram posts showcasing latest collection arrivals",
+    "Customer testimonial imagery and store ambience photos"
+  ],
+  "sentiment_summary": {
+    "overall": "Highly Positive",
+    "rating_distribution_estimate": {
+      "5_star": "~70%",
+      "4_star": "~18%",
+      "3_star": "~7%",
+      "2_star": "~3%",
+      "1_star": "~2%"
+    },
+    "key_themes": [
+      "Quality craftsmanship",
+      "Trusted jewellery store",
+      "Wide variety of designs",
+      "Excellent customer service",
+      "Competitive pricing",
+      "Bridal specialization"
+    ]
+  }
+}

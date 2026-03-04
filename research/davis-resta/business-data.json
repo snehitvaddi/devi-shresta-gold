@@ -1,0 +1,109 @@
+{
+  "scrape_date": "2026-03-02",
+  "sources": {
+    "instagram": "https://www.instagram.com/devishrestagoldanddiamonds/?hl=en",
+    "google_maps": "https://www.google.com/maps/place/Devi+Shresta+gold+and+diamonds/@16.5118602,80.6236169,17z",
+    "web_search": true
+  },
+  "business": {
+    "name": "Devi Shresta Gold and Diamonds",
+    "display_name": "Devi Shresta Gold & Diamonds",
+    "instagram_handle": "@devishrestagoldanddiamonds",
+    "description": "Vijayawada's favorite gold and diamond jewelry store, known for unmatched craftsmanship and luxury jewelry for every occasion.",
+    "phone": "+91-7337372922",
+    "phone_raw": "7337372922",
+    "address": {
+      "street": "Governorpet",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zip": "520002",
+      "country": "India",
+      "landmark": "Near Governorpet Main Road"
+    },
+    "coordinates": {
+      "lat": 16.5118602,
+      "lng": 80.6261918
+    },
+    "rating": 4.6,
+    "review_count": 185,
+    "category": "Jewelry Store",
+    "subcategories": [
+      "Gold Jewelry",
+      "Diamond Jewelry",
+      "Wedding Jewelry",
+      "Bridal Sets"
+    ],
+    "hours": {
+      "monday": "10:00-21:00",
+      "tuesday": "10:00-21:00",
+      "wednesday": "10:00-21:00",
+      "thursday": "10:00-21:00",
+      "friday": "10:00-21:00",
+      "saturday": "10:00-21:00",
+      "sunday": "10:00-21:00"
+    },
+    "social_media": {
+      "instagram": "https://www.instagram.com/devishrestagoldanddiamonds/",
+      "google_maps": "https://www.google.com/maps/place/Devi+Shresta+gold+and+diamonds/@16.5118602,80.6236169,17z"
+    },
+    "features_observed": [
+      "Gold Jewelry",
+      "Diamond Jewelry",
+      "Bridal Collections",
+      "Traditional Designs",
+      "Contemporary Designs",
+      "Custom Orders",
+      "Hallmarked Gold",
+      "BIS Certified"
+    ],
+    "product_categories_inferred": [
+      "Gold Necklaces",
+      "Diamond Necklaces",
+      "Gold Bangles",
+      "Diamond Bangles",
+      "Gold Rings",
+      "Diamond Rings",
+      "Engagement Rings",
+      "Gold Earrings",
+      "Diamond Earrings",
+      "Bridal Sets",
+      "Mangalsutra",
+      "Gold Chains",
+      "Pendants",
+      "Maang Tikka",
+      "Nose Rings",
+      "Anklets",
+      "Gold Coins"
+    ],
+    "price_range": "Mid to Premium",
+    "target_audience": [
+      "Brides-to-be",
+      "Wedding families",
+      "Gift buyers",
+      "Gold investors",
+      "Fashion-conscious women",
+      "Traditional jewelry lovers"
+    ]
+  },
+  "local_market_context": {
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "population_approx": "1.5 million",
+    "jewelry_market": "Highly competitive with major national chains (Malabar, Kalyan, Tanishq) and established local jewelers",
+    "key_competitors_local": [
+      "Malabar Gold & Diamonds - Vijayawada",
+      "Kalyan Jewellers - Vijayawada",
+      "Kirtilals - MG Road, Vijayawada",
+      "Sridevi Jewellers - MG Road, Vijayawada",
+      "Sri Devi Jewellery - Vijayawada"
+    ],
+    "cultural_preferences": [
+      "South Indian temple jewelry",
+      "Traditional Telugu wedding jewelry",
+      "Lakshmi motif designs",
+      "Heavy bridal sets",
+      "22K gold preference",
+      "Kundan and polki work"
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "scrape_date": "2026-03-02",
+  "scrape_method": "web_search_index_extraction",
+  "scrape_notes": "Instagram blocks automated scraping. Data extracted from Google search index snippets, meta descriptions, and search engine cached titles of individual posts. Not all 361 posts could be individually accessed; data represents what search engines have indexed.",
+  "source_url": "https://www.instagram.com/devishrestagoldanddiamonds/?hl=en",
+
+  "profile": {
+    "username": "devishrestagoldanddiamonds",
+    "display_name": "Devi Shresta",
+    "full_business_name": "Devi Shresta Gold and Diamonds",
+    "bio": "Vijayawada's Favourite gold & diamond Jewellery Store | Unmatched craftsmanship | Made for every occasion | Luxury you can trust",
+    "bio_components": {
+      "location_claim": "Vijayawada's Favourite gold & diamond Jewellery Store",
+      "usp_1": "Unmatched craftsmanship",
+      "usp_2": "Made for every occasion",
+      "usp_3": "Luxury you can trust"
+    },
+    "followers": "~9,267",
+    "posts_count": "361",
+    "phone": "7337372922",
+    "phone_formatted": "+91-7337372922",
+    "location": "Governorpet, Vijayawada, Andhra Pradesh 520002",
+    "category": "Jewelry Store",
+    "profile_url": "https://www.instagram.com/devishrestagoldanddiamonds/"
+  },
+
+  "posts_indexed": [
+    {
+      "post_id": "DJlsEO_suSj",
+      "type": "reel",
+      "url": "https://www.instagram.com/devishrestagoldanddiamonds/reel/DJlsEO_suSj/",
+      "caption_snippet": "We're Going Bigger, Brighter, and Grander...",
+      "inferred_content": "Announcement post - likely new store expansion, bigger showroom, or grand event/sale announcement",
+      "products_mentioned": [],
+      "hashtags": [],
+      "tone": "Aspirational, exciting, event-driven",
+      "estimated_date": "2025 (recent post based on reel ID pattern)"
+    },
+    {
+      "post_id": "DC7Drrfh9ls",
+      "type": "reel",
+      "url": "https://www.instagram.com/devishrestagoldanddiamonds/reel/DC7Drrfh9ls/",
+      "caption_snippet": "Wear Your Culture with a Modern Statement.",
+      "inferred_content": "Showcasing traditional South Indian jewelry with contemporary design elements, likely a fusion collection or modern takes on temple/traditional jewelry",
+      "products_mentioned": ["Traditional jewelry", "Cultural jewelry", "Statement pieces"],
+      "hashtags": [],
+      "tone": "Cultural pride, modern elegance, brand positioning",
+      "estimated_date": "2024 (based on reel ID pattern)"
+    },
+    {
+      "post_id": "DG4u3FTzv_W",
+      "type": "reel",
+      "url": "https://www.instagram.com/devishrestagoldanddiamonds/reel/DG4u3FTzv_W/",
+      "caption_snippet": "This exquisite haram from Devi Shresta Gold & Diamonds is a...",
+      "inferred_content": "Product showcase of a traditional gold haram (long necklace), likely highlighting craftsmanship details, weight, and design elements",
+      "products_mentioned": ["Haram", "Long necklace", "Gold haram"],
+      "hashtags": [],
+      "tone": "Product-focused, descriptive, luxury positioning",
+      "estimated_date": "2025 (based on reel ID pattern)"
+    },
+    {
+      "post_id": "C-xQLpSvF3i",
+      "type": "reel",
+      "url": "https://www.instagram.com/devishrestagoldanddiamonds/reel/C-xQLpSvF3i/",
+      "caption_snippet": "All new Black Diamond collection from...",
+      "inferred_content": "Launch of a new Black Diamond jewelry collection, showcasing diamond jewelry with black diamond accents or settings",
+      "products_mentioned": ["Black Diamond collection", "Diamond jewelry"],
+      "hashtags": [],
+      "tone": "New arrival excitement, collection launch, modern luxury",
+      "estimated_date": "2024 (based on reel ID pattern)"
+    }
+  ],
+
+  "product_categories_found": [
+    "Harams (Long Necklaces)",
+    "Gold Necklaces",
+    "Diamond Necklaces",
+    "Black Diamond Collection",
+    "Traditional / Temple Jewelry",
+    "Cultural / Statement Jewelry",
+    "Bridal Jewelry Sets",
+    "Gold Jewelry (General)",
+    "Diamond Jewelry (General)"
+  ],
+
+  "product_categories_inferred_from_bio_and_context": [
+    "Gold Necklaces / Harams",
+    "Diamond Necklaces",
+    "Gold Bangles",
+    "Diamond Bangles",
+    "Gold Earrings (Jhumkas / Buttalu)",
+    "Diamond Earrings",
+    "Gold Rings",
+    "Diamond Rings",
+    "Engagement Rings",
+    "Bridal Sets (Necklace + Earrings + Bangles)",
+    "Mangalsutra",
+    "Gold Chains",
+    "Pendants",
+    "Chokers",
+    "Vaddanam (Waist Belt / Hip Chain)",
+    "Maang Tikka",
+    "Nose Rings / Nose Pins",
+    "Anklets",
+    "Gold Coins",
+    "Black Diamond Collection",
+    "Temple Jewelry",
+    "Antique / Nakshi Jewelry"
+  ],
+
+  "pricing_mentions": {
+    "direct_pricing_found": false,
+    "notes": "No direct pricing visible in indexed post captions. Typical for Indian jewelry stores on Instagram - they use 'DM for price' model or direct customers to visit store. Pricing depends on daily gold rate, weight, and making charges.",
+    "price_range_inferred": "Mid to Premium (based on Google Maps business data and Vijayawada market positioning)",
+    "gold_purity_mentions": {
+      "direct": [],
+      "inferred": ["22K Gold (standard for South Indian jewelry stores)", "BIS Hallmarked (mentioned in business features)"],
+      "notes": "22K (916) gold is the standard for traditional South Indian jewelry. 18K commonly used for diamond-studded pieces."
+    },
+    "weight_mentions": {
+      "direct": [],
+      "inferred": "Harams typically 30-150 grams. Bridal sets 100-300 grams total. Lightweight daily wear 5-20 grams.",
+      "notes": "No specific gram weights found in indexed captions"
+    }
+  },
+
+  "offers_schemes": {
+    "direct_mentions": [
+      {
+        "caption_reference": "We're Going Bigger, Brighter, and Grander",
+        "inferred_type": "Store expansion / Grand event / Special sale",
+        "notes": "Likely a new showroom launch, anniversary celebration, or major seasonal sale event"
+      }
+    ],
+    "inferred_seasonal": [
+      "Akshaya Tritiya offers (standard for all South Indian gold stores)",
+      "Diwali / Dhanteras special schemes",
+      "Wedding season promotions",
+      "Ugadi / Telugu New Year offers",
+      "Dasara / Navaratri festive offers",
+      "Anniversary sale events"
+    ],
+    "common_schemes_for_segment": [
+      "Gold savings scheme (monthly installment plan)",
+      "Old gold exchange program",
+      "Making charges discount offers",
+      "Free gold coin on purchase above certain amount",
+      "EMI / financing options",
+      "Wedding package deals"
+    ]
+  },
+
+  "tone_style": {
+    "overall_tone": "Premium, aspirational, culturally rooted with modern appeal",
+    "language_style": "English-language captions with elegant, descriptive phrases. Uses short impactful statements. Mixes cultural pride with luxury positioning.",
+    "content_themes": [
+      "Cultural heritage meets modern style ('Wear Your Culture with a Modern Statement')",
+      "Aspiration and growth ('Going Bigger, Brighter, Grander')",
+      "Product excellence and craftsmanship ('Exquisite haram', 'Unmatched craftsmanship')",
+      "New collections and launches ('All new Black Diamond collection')",
+      "Trust and luxury ('Luxury you can trust')"
+    ],
+    "posting_format": "Primarily Reels (video content) showcasing jewelry pieces, likely with close-up product shots, model/lifestyle shots, and store ambiance content",
+    "posting_frequency": "~361 posts total - approximately 2-3 posts per week (consistent for a local jewelry store)",
+    "engagement_style": "Product showcase reels, collection announcements, brand story content, likely occasional festive/occasion-based posts",
+    "brand_voice_keywords": [
+      "Exquisite",
+      "Unmatched craftsmanship",
+      "Luxury",
+      "Trust",
+      "Culture",
+      "Modern statement",
+      "Bigger, Brighter, Grander",
+      "Made for every occasion",
+      "Favourite"
+    ]
+  },
+
+  "instagram_strategy_observations": {
+    "content_pillars": [
+      "Product Showcases (individual pieces and collections)",
+      "Collection Launches (Black Diamond, Traditional, Modern)",
+      "Brand Story / Values (craftsmanship, trust, culture)",
+      "Event / Store Announcements (expansion, sales, grand events)",
+      "Occasion-based content (bridal, festive, daily wear)"
+    ],
+    "video_first": true,
+    "video_first_notes": "All indexed posts are Reels, suggesting a strong video-first strategy consistent with Instagram's algorithm preference",
+    "caption_style": "Short, punchy opening lines followed by descriptive product/brand text. Uses ellipsis (...) to create curiosity and encourage reading more.",
+    "hashtag_strategy": "Hashtags not visible in Google-indexed snippets but likely include: #GoldJewellery #DiamondJewellery #Vijayawada #BridalJewellery #TempleJewellery #SouthIndianJewellery #22KGold #Haram #TraditionalJewellery #DeviShresta #GoldAndDiamonds",
+    "call_to_action": "Likely uses DM-based inquiry model, store visit prompts, and phone number for direct contact"
+  },
+
+  "competitive_context": {
+    "market": "Vijayawada, Andhra Pradesh",
+    "position": "Local favourite / trusted neighborhood jeweler competing against national chains",
+    "differentiators": [
+      "Cultural connection - positioning as 'Vijayawada's Favourite'",
+      "Craftsmanship emphasis over mass production",
+      "Modern + Traditional fusion approach",
+      "Personal trust and relationship-based selling",
+      "Specialty collections like Black Diamond"
+    ],
+    "national_competitors_in_city": [
+      "Malabar Gold & Diamonds",
+      "Kalyan Jewellers",
+      "Tanishq",
+      "Joyalukkas"
+    ]
+  }
+}
