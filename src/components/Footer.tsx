@@ -39,7 +39,10 @@ export default function Footer({ orgData }: FooterProps) {
               {[
                 { label: 'Home', href: '/' },
                 { label: 'Collections', href: '/collections' },
-                { label: 'About Us', href: '/about' },
+                { label: 'Ring Size Guide', href: '/ring-size-guide' },
+                { label: 'EMI Calculator', href: '/emi-calculator' },
+                { label: 'Exchange Policy', href: '/exchange-policy' },
+                { label: 'Video Call Shopping', href: '/video-call' },
                 { label: 'Book Appointment', href: '/booking' },
                 { label: 'Contact', href: '/contact' },
               ].map((link) => (

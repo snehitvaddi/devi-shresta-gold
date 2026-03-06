@@ -11,6 +11,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import type { InstaPost } from "@/components/InstagramFeed";
 import ContactSection from "@/components/ContactSection";
 import MapEmbed from "@/components/MapEmbed";
+import TrustBadgesBar from "@/components/TrustBadgesBar";
 import { getOrgData, getCurrentOrgId } from "@/lib/data/org";
 import { getFeaturedProducts, getProducts } from "@/lib/data/products";
 
@@ -264,6 +265,13 @@ export default async function HomePage() {
         handle="devishrestagoldanddiamonds"
         followerCount="9.2K"
       />
+
+      {(orgData as unknown as Record<string, unknown>).trustBadges && (
+        <TrustBadgesBar
+          badges={(orgData as unknown as Record<string, unknown>).trustBadges as Array<{ icon: string; title: string; description: string }>}
+          variant="full"
+        />
+      )}
 
       <ContactSection orgData={orgData} />
 

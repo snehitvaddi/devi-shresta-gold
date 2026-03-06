@@ -9,6 +9,7 @@ import ThemeToggle from './ThemeToggle';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Collections', href: '/collections' },
+  { label: 'Video Call', href: '/video-call' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
   { label: 'Book Appointment', href: '/booking' },

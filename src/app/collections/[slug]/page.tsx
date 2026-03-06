@@ -7,6 +7,9 @@ import { cn } from "@/lib/utils";
 import { getOrgData, getCurrentOrgId } from "@/lib/data/org";
 import { getProducts } from "@/lib/data/products";
 import ProductCard from "@/components/ProductCard";
+import EMICalculator from "@/components/EMICalculator";
+import PriceBreakdown from "@/components/PriceBreakdown";
+import TrustBadgesBar from "@/components/TrustBadgesBar";
 import type { Product } from "@/types";
 
 interface PageProps {
@@ -52,8 +55,10 @@ export default async function ProductDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  const orgData = await getOrgData(getCurrentOrgId());
   const primaryImage = product.images.find((img) => img.isPrimary) ?? product.images[0];
   const hasDiscount = product.compareAtPrice && product.compareAtPrice > product.price;
+  const trustBadges = (orgData as unknown as Record<string, unknown>).trustBadges as Array<{ icon: string; title: string; description: string }> | undefined;
 
   // Get related products (same category, exclude current)
   const allProducts = await getProducts(getCurrentOrgId());
@@ -126,8 +131,27 @@ export default async function ProductDetailPage({ params }: PageProps) {
               )}
             </div>
 
+            {/* Price Breakdown */}
+            <PriceBreakdown
+              totalPrice={product.price}
+              currency={product.currency}
+              metadata={product.metadata}
+            />
+
+            {/* EMI Calculator (compact) */}
+            <div className="mb-6">
+              <EMICalculator
+                defaultPrice={product.price}
+                compact={true}
+                whatsappNumber={orgData.socialLinks.whatsapp?.replace(/\D/g, '')}
+              />
+            </div>
+
+            {/* Trust Badges Strip */}
+            {trustBadges && <TrustBadgesBar badges={trustBadges} variant="strip" />}
+
             {/* Stock */}
-            <div className="flex items-center gap-2 mb-8">
+            <div className="flex items-center gap-2 mb-8 mt-6">
               <span
                 className={cn(
                   "w-2 h-2 rounded-full",
