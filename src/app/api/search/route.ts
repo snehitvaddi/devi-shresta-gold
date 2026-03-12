@@ -3,8 +3,19 @@ import { searchByImage, searchByDescription } from "@/lib/visual-search/search";
 import { describeImage } from "@/lib/ai/vision";
 import { getCurrentOrgId } from "@/lib/data/org";
 
+const MAX_PAYLOAD_BYTES = 10 * 1024 * 1024; // 10 MB
+const MAX_BASE64_LENGTH = MAX_PAYLOAD_BYTES;
+
 export async function POST(request: NextRequest) {
   try {
+    const contentLength = Number(request.headers.get("content-length") ?? "0");
+    if (contentLength > MAX_PAYLOAD_BYTES) {
+      return NextResponse.json(
+        { error: "Payload too large" },
+        { status: 413 },
+      );
+    }
+
     const contentType = request.headers.get("content-type") ?? "";
     const orgId = getCurrentOrgId();
 
@@ -52,10 +63,16 @@ export async function POST(request: NextRequest) {
     const { image, query } = body as {
       image?: string; // base64 encoded
       query?: string;
-      orgId?: string;
     };
 
-    const targetOrgId = body.orgId ?? orgId;
+    const targetOrgId = orgId;
+
+    if (image && typeof image === "string" && image.length > MAX_BASE64_LENGTH) {
+      return NextResponse.json(
+        { error: "Payload too large" },
+        { status: 413 },
+      );
+    }
 
     if (image) {
       // Base64 image search

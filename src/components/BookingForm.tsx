@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Calendar, Clock, CheckCircle, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const services = [
+const DEFAULT_SERVICES = [
   'Consultation',
   'Custom Design',
   'Ring Sizing',
@@ -21,7 +21,11 @@ const timeSlots = [
   '8:00 PM', '8:30 PM',
 ];
 
-export default function BookingForm() {
+interface BookingFormProps {
+  services?: string[];
+}
+
+export default function BookingForm({ services = DEFAULT_SERVICES }: BookingFormProps) {
   const [form, setForm] = useState({
     name: '',
     phone: '',

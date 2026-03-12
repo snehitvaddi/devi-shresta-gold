@@ -20,7 +20,19 @@ async function readProducts(orgId: string): Promise<Product[]> {
 }
 
 async function writeProducts(orgId: string, products: Product[]): Promise<void> {
-  await fs.writeFile(productsPath(orgId), JSON.stringify(products, null, 2), 'utf-8');
+  const filePath = productsPath(orgId);
+  let output: unknown = products;
+  try {
+    const raw = await fs.readFile(filePath, 'utf-8');
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed) && typeof parsed === 'object' && parsed !== null) {
+      // Preserve the original wrapper structure (e.g. categories array)
+      output = { ...parsed, products };
+    }
+  } catch {
+    // File doesn't exist yet or is invalid — write plain array
+  }
+  await fs.writeFile(filePath, JSON.stringify(output, null, 2), 'utf-8');
 }
 
 export async function getProducts(orgId: string): Promise<Product[]> {

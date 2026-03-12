@@ -25,7 +25,7 @@ export const jewelrySeo: DomainSeo = {
   ],
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     siteName: '{{businessName}}',
   },
 };

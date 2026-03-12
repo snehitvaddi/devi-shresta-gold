@@ -166,17 +166,21 @@
   },
   "brand": {
     "colors": {
-      "primary": "#7B1F3A",
-      "secondary": "#D4AF37",
-      "accent": "#B76E79",
-      "background": "#FFFDF7",
-      "surface": "#FFFFFF",
-      "text": "#1A1A1A",
-      "muted": "#6B6B6B",
-      "border": "#E8E0D5"
+      "primary": "#D4AF37",
+      "primaryDark": "#B8960C",
+      "secondary": "#1a1a2e",
+      "accent": "#e8d5b7",
+      "background": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "surfaceLight": "#2a2a2a",
+      "text": "#ffffff",
+      "textMuted": "#a0a0a0",
+      "textDark": "#1a1a2e",
+      "success": "#22c55e",
+      "error": "#ef4444"
     },
     "fonts": {
-      "display": "Playfair Display",
+      "heading": "Playfair Display",
       "body": "Inter",
       "accent": "Cormorant Garamond"
     }

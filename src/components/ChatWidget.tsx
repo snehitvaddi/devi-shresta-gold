@@ -20,7 +20,11 @@ interface LeadInfo {
 
 type ChatStep = "closed" | "lead-capture" | "chatting";
 
-export default function ChatWidget() {
+interface ChatWidgetProps {
+  businessName?: string;
+}
+
+export default function ChatWidget({ businessName = "Devi Shresta Gold & Diamonds" }: ChatWidgetProps) {
   const [step, setStep] = useState<ChatStep>("closed");
   const [lead, setLead] = useState<LeadInfo>({ name: "", phone: "", email: "" });
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -85,7 +89,7 @@ export default function ChatWidget() {
       {
         id: "welcome",
         role: "assistant",
-        content: `Hi ${lead.name.split(" ")[0]}! 👋 Welcome to Devi Shresta Gold & Diamonds. I'm your AI concierge — I can help you find jewelry, check prices, book a visit, or answer any questions. What are you looking for today?`,
+        content: `Hi ${lead.name.split(" ")[0]}! 👋 Welcome to ${businessName}. I'm your AI concierge — I can help you find jewelry, check prices, book a visit, or answer any questions. What are you looking for today?`,
         timestamp: new Date(),
       },
     ]);
@@ -142,7 +146,7 @@ export default function ChatWidget() {
           {
             id: `system-${Date.now()}`,
             role: "system",
-            content: `I've notified our team about your request. Someone from Devi Shresta will reach out to you on ${lead.phone} shortly. You can also WhatsApp us directly for faster response.`,
+            content: `I've notified our team about your request. Someone from ${businessName} will reach out to you on ${lead.phone} shortly. You can also WhatsApp us directly for faster response.`,
             timestamp: new Date(),
           },
         ]);
@@ -189,7 +193,7 @@ export default function ChatWidget() {
       {/* Chat Window */}
       <div
         className={cn(
-          "fixed bottom-24 right-6 z-50",
+          "fixed bottom-40 right-6 z-50",
           "w-[380px] max-w-[calc(100vw-2rem)]",
           "bg-[var(--color-bg-surface)] rounded-[var(--radius-lg)]",
           "border border-[var(--color-text)]/10 shadow-2xl",
@@ -298,7 +302,7 @@ export default function ChatWidget() {
             <div className="flex items-center gap-1.5 mt-3 justify-center">
               <ShieldCheck size={12} className="text-green-400" />
               <p className="text-[10px] text-[var(--color-text-muted)]">
-                Your info is private and only shared with Devi Shresta team
+                Your info is private and only shared with {businessName} team
               </p>
             </div>
           </div>
@@ -427,7 +431,7 @@ export default function ChatWidget() {
       <button
         onClick={openChat}
         className={cn(
-          "fixed bottom-24 right-6 z-40",
+          "fixed bottom-24 right-6 z-50",
           "w-14 h-14 rounded-full",
           "bg-[var(--color-primary)] text-[var(--color-text-dark)]",
           "shadow-lg hover:shadow-[var(--shadow-gold)]",

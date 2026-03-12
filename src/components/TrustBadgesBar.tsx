@@ -10,6 +10,7 @@ interface TrustBadge {
 interface TrustBadgesBarProps {
   badges: TrustBadge[];
   variant?: 'strip' | 'full';
+  businessName?: string;
 }
 
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
@@ -21,7 +22,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
   'wrench': Wrench,
 };
 
-export default function TrustBadgesBar({ badges, variant = 'strip' }: TrustBadgesBarProps) {
+export default function TrustBadgesBar({ badges, variant = 'strip', businessName = 'Us' }: TrustBadgesBarProps) {
   if (variant === 'strip') {
     return (
       <div className="py-4 border-y border-[var(--color-text)]/5">
@@ -50,7 +51,7 @@ export default function TrustBadgesBar({ badges, variant = 'strip' }: TrustBadge
           className="text-2xl md:text-3xl font-bold text-gradient text-center mb-10"
           style={{ fontFamily: 'var(--font-heading)' }}
         >
-          Why Trust Devi Shresta
+          Why Trust {businessName}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {badges.map((badge) => {

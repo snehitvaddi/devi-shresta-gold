@@ -94,12 +94,12 @@ export default function Footer({ orgData }: FooterProps) {
               <li className="flex items-start gap-3">
                 <Clock size={16} className="text-[var(--color-primary)] mt-0.5 shrink-0" />
                 <span>
-                  {orgData.businessHours
-                    .filter((h) => !h.closed)
-                    .slice(0, 1)
-                    .map((h) => `${h.open} - ${h.close}`)
-                    .join('')}{' '}
-                  (All 7 Days)
+                  {(() => {
+                    const openDays = orgData.businessHours.filter((h) => !h.closed);
+                    const hours = openDays.length > 0 ? `${openDays[0].open} - ${openDays[0].close}` : '';
+                    const daysLabel = openDays.length === 7 ? 'All 7 Days' : `${openDays.length} Days a Week`;
+                    return `${hours} (${daysLabel})`;
+                  })()}
                 </span>
               </li>
             </ul>

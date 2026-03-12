@@ -7,6 +7,7 @@ interface PriceBreakdownProps {
   totalPrice: number;
   currency: string;
   metadata: Record<string, string>;
+  goldRatePerGram?: number;
 }
 
 function formatCurrency(amount: number, currency: string): string {
@@ -43,7 +44,7 @@ function getPurityLabel(metadata: Record<string, string>): string {
   return 'N/A';
 }
 
-const GOLD_RATE_PER_GRAM = 7500; // default rate in INR
+const DEFAULT_GOLD_RATE_PER_GRAM = 7500; // default rate in INR
 const GST_RATE = 0.03; // 3%
 
 interface BreakdownLine {
@@ -55,12 +56,13 @@ interface BreakdownLine {
 function calculateBreakdown(
   totalPrice: number,
   metadata: Record<string, string>,
+  goldRatePerGram: number = DEFAULT_GOLD_RATE_PER_GRAM,
 ): { lines: BreakdownLine[]; usedFallback: boolean } {
   const weight = parseWeight(metadata.weight);
   const purity = parsePurity(metadata);
 
   if (weight && purity) {
-    const goldValue = weight * purity * GOLD_RATE_PER_GRAM;
+    const goldValue = weight * purity * goldRatePerGram;
     // GST = 3% of (goldValue + makingCharges)
     // totalPrice = goldValue + makingCharges + GST
     // totalPrice = goldValue + makingCharges + 0.03*(goldValue + makingCharges)
@@ -99,9 +101,9 @@ function calculateBreakdown(
   };
 }
 
-export default function PriceBreakdown({ totalPrice, currency, metadata }: PriceBreakdownProps) {
+export default function PriceBreakdown({ totalPrice, currency, metadata, goldRatePerGram = DEFAULT_GOLD_RATE_PER_GRAM }: PriceBreakdownProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const { lines, usedFallback } = calculateBreakdown(totalPrice, metadata);
+  const { lines, usedFallback } = calculateBreakdown(totalPrice, metadata, goldRatePerGram);
   const purityLabel = getPurityLabel(metadata);
   const weight = parseWeight(metadata.weight);
 
@@ -222,7 +224,7 @@ export default function PriceBreakdown({ totalPrice, currency, metadata }: Price
           <div className="flex items-start gap-2 mt-4 p-3 rounded-[var(--radius-sm)] bg-[var(--color-primary)]/5 border border-[var(--color-primary)]/10">
             <Info size={14} className="text-[var(--color-primary)] flex-shrink-0 mt-0.5" />
             <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
-              Gold value based on today&apos;s rate ({formatCurrency(GOLD_RATE_PER_GRAM, currency)}/g).
+              Gold value based on today&apos;s rate ({formatCurrency(goldRatePerGram, currency)}/g).
               Final price may vary based on prevailing gold rate at the time of purchase.
               {usedFallback && ' Breakdown shown is approximate.'}
             </p>

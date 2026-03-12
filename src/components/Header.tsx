@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { Menu, X, MessageCircle, TrendingUp, TrendingDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -30,6 +30,34 @@ export default function Header({ businessName, whatsappNumber, domain }: HeaderP
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [goldPrice, setGoldPrice] = useState<GoldPrice | null>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+
+  const handleMenuKeyDown = useCallback((e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setMobileOpen(false);
+      return;
+    }
+    if (e.key !== 'Tab') return;
+    const menu = mobileMenuRef.current;
+    if (!menu) return;
+    const focusable = menu.querySelectorAll<HTMLElement>(
+      'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else {
+      if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -177,6 +205,10 @@ export default function Header({ businessName, whatsappNumber, domain }: HeaderP
           'fixed inset-0 top-16 z-40 lg:hidden transition-all duration-300',
           mobileOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
         )}
+        role={mobileOpen ? 'dialog' : undefined}
+        aria-modal={mobileOpen ? true : undefined}
+        onKeyDown={mobileOpen ? handleMenuKeyDown : undefined}
+        ref={mobileMenuRef}
       >
         {/* Backdrop */}
         <div

@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Gold Exchange & Buyback Policy | Devi Shresta Gold & Diamonds",
+  title: "Gold Exchange & Buyback Policy",
   description:
     "Exchange your old gold jewelry for stunning new designs at Devi Shresta Gold & Diamonds, Vijayawada. 100% value on own gold, fair rates for other jeweler gold, transparent purity testing.",
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Devi Shresta exchange",
   ],
   openGraph: {
-    title: "Gold Exchange & Buyback Policy | Devi Shresta Gold & Diamonds",
+    title: "Gold Exchange & Buyback Policy",
     description:
       "Get the best value for your old gold. Transparent testing, best market rates, and zero making charges on exchange.",
   },

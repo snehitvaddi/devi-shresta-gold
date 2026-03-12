@@ -133,7 +133,7 @@ export default function PromoBanner({
                   {slide.title}
                 </h3>
                 {slide.highlight && (
-                  <span className="hidden sm:inline shrink-0 text-xs font-bold text-[var(--color-primary)]">
+                  <span className="shrink-0 text-xs sm:text-sm font-bold text-[var(--color-primary)]">
                     {slide.highlight}
                   </span>
                 )}
@@ -192,14 +192,18 @@ export default function PromoBanner({
                   setDirection(i > current ? "right" : "left");
                   setCurrent(i);
                 }}
-                className={cn(
-                  "h-1 rounded-full transition-all duration-300",
-                  i === current
-                    ? "w-6 bg-[var(--color-primary)]"
-                    : "w-1.5 bg-white/20 hover:bg-white/40"
-                )}
+                className="p-3"
                 aria-label={`Go to slide ${i + 1}`}
-              />
+              >
+                <span
+                  className={cn(
+                    "block h-1 rounded-full transition-all duration-300",
+                    i === current
+                      ? "w-6 bg-[var(--color-primary)]"
+                      : "w-1.5 bg-white/20 hover:bg-white/40"
+                  )}
+                />
+              </button>
             ))}
           </div>
         )}

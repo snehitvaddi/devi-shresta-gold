@@ -6,7 +6,7 @@ import { getOrgData, getCurrentOrgId } from "@/lib/data/org";
 export async function generateMetadata(): Promise<Metadata> {
   const orgData = await getOrgData(getCurrentOrgId());
   return {
-    title: `Contact Us | ${orgData.name}`,
+    title: "Contact Us",
     description: `Get in touch with ${orgData.name}. Visit our store, call us, or send us a message.`,
   };
 }

@@ -221,8 +221,55 @@ export default async function HomePage() {
     },
   ];
 
+  // Build JSON-LD structured data from org data
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: orgData.name,
+    description: orgData.description,
+    url: typeof window !== "undefined" ? window.location.origin : undefined,
+    telephone: orgData.phone,
+    image: orgData.logo,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: orgData.address.street,
+      addressLocality: orgData.address.city,
+      addressRegion: orgData.address.state,
+      postalCode: orgData.address.zip,
+      addressCountry: orgData.address.country,
+    },
+    geo: coords
+      ? {
+          "@type": "GeoCoordinates",
+          latitude: coords.lat,
+          longitude: coords.lng,
+        }
+      : undefined,
+    openingHours: orgData.businessHours
+      .filter((h: { closed: boolean }) => !h.closed)
+      .map(
+        (h: { day: string; open?: string; close?: string }) =>
+          `${h.day.slice(0, 2)} ${h.open}-${h.close}`
+      ),
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: orgData.rating,
+      reviewCount: orgData.reviewCount,
+      bestRating: 5,
+    },
+    sameAs: [
+      orgData.socialLinks?.instagram,
+      orgData.socialLinks?.facebook,
+      orgData.socialLinks?.google_maps,
+    ].filter(Boolean),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Hero
         title={orgData.name}
         subtitle={orgData.tagline}
@@ -270,6 +317,7 @@ export default async function HomePage() {
         <TrustBadgesBar
           badges={(orgData as unknown as Record<string, unknown>).trustBadges as Array<{ icon: string; title: string; description: string }>}
           variant="full"
+          businessName={orgData.name}
         />
       )}
 

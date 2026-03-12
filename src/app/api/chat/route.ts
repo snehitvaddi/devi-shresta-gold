@@ -15,14 +15,53 @@ function getAgent(): ChatAgent {
   return agent;
 }
 
+const MAX_PAYLOAD_BYTES = 10 * 1024 * 1024; // 10 MB
+const MAX_BASE64_LENGTH = MAX_PAYLOAD_BYTES;
+const MAX_HISTORY_LENGTH = 20;
+const MAX_CONTENT_LENGTH = 2000;
+
+function sanitizeHistory(raw: unknown): ConversationMessage[] {
+  if (!Array.isArray(raw)) return [];
+  const validRoles = new Set(["user", "assistant"]);
+  return raw
+    .filter(
+      (entry): entry is { role: string; content: string } =>
+        entry != null &&
+        typeof entry === "object" &&
+        typeof entry.role === "string" &&
+        validRoles.has(entry.role) &&
+        typeof entry.content === "string",
+    )
+    .map((entry) => ({
+      role: entry.role as "user" | "assistant",
+      content: entry.content.slice(0, MAX_CONTENT_LENGTH),
+    }))
+    .slice(-MAX_HISTORY_LENGTH);
+}
+
 export async function POST(request: NextRequest) {
   try {
+    const contentLength = Number(request.headers.get("content-length") ?? "0");
+    if (contentLength > MAX_PAYLOAD_BYTES) {
+      return NextResponse.json(
+        { error: "Payload too large" },
+        { status: 413 },
+      );
+    }
+
     const body = await request.json();
-    const { message, history, image } = body as {
+    const { message, image } = body as {
       message: string;
-      history?: ConversationMessage[];
       image?: string; // base64 encoded image
     };
+    const history = sanitizeHistory(body.history);
+
+    if (image && typeof image === "string" && image.length > MAX_BASE64_LENGTH) {
+      return NextResponse.json(
+        { error: "Payload too large" },
+        { status: 413 },
+      );
+    }
 
     if (!message || typeof message !== "string") {
       return NextResponse.json(
@@ -51,6 +90,14 @@ export async function POST(request: NextRequest) {
       location: `${orgData.address.street}, ${orgData.address.city}, ${orgData.address.state}`,
     };
 
+    // Check if Anthropic API key is configured
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return NextResponse.json({
+        reply: "Our chat assistant is currently being set up. Please reach out via WhatsApp for immediate assistance!",
+        error: false,
+      });
+    }
+
     // If image is provided, use vision to identify product first
     if (image) {
       try {
@@ -73,7 +120,7 @@ export async function POST(request: NextRequest) {
         const chatAgent = getAgent();
         const response = await chatAgent.chat(
           enrichedMessage,
-          history ?? [],
+          history,
           orgContext,
         );
 
@@ -100,7 +147,7 @@ export async function POST(request: NextRequest) {
     const handoverManager = new HandoverManager([]);
     const handoverCheck = handoverManager.shouldHandover(message, {
       failedAttempts: 0,
-      conversationLength: (history ?? []).length,
+      conversationLength: history.length,
       sentiment: "neutral",
       topics: [],
     });
@@ -117,7 +164,7 @@ export async function POST(request: NextRequest) {
     const chatAgent = getAgent();
     const response = await chatAgent.chat(
       message,
-      history ?? [],
+      history,
       orgContext,
     );
 

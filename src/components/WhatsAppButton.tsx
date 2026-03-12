@@ -9,33 +9,32 @@ interface WhatsAppButtonProps {
   businessName?: string;
 }
 
-const quickMessages = [
-  {
-    icon: ShoppingBag,
-    label: "I want to see your collection",
-    message: "Hi! I'd like to explore your jewelry collection. Can you share the latest designs?",
-  },
-  {
-    icon: HelpCircle,
-    label: "I have a question about a product",
-    message: "Hi! I have a question about one of your products. Can you help?",
-  },
-  {
-    icon: Calendar,
-    label: "I want to book a visit",
-    message: "Hi! I'd like to book a visit to your store. When would be a good time?",
-  },
-  {
-    icon: MessageCircle,
-    label: "Just want to chat",
-    message: "Hi! I'm interested in Devi Shresta Gold & Diamonds. Can we chat?",
-  },
-];
-
 export default function WhatsAppButton({
   phoneNumber,
   businessName = "Devi Shresta Gold & Diamonds",
 }: WhatsAppButtonProps) {
+  const quickMessages = [
+    {
+      icon: ShoppingBag,
+      label: "I want to see your collection",
+      message: "Hi! I'd like to explore your jewelry collection. Can you share the latest designs?",
+    },
+    {
+      icon: HelpCircle,
+      label: "I have a question about a product",
+      message: "Hi! I have a question about one of your products. Can you help?",
+    },
+    {
+      icon: Calendar,
+      label: "I want to book a visit",
+      message: "Hi! I'd like to book a visit to your store. When would be a good time?",
+    },
+    {
+      icon: MessageCircle,
+      label: "Just want to chat",
+      message: `Hi! I'm interested in ${businessName}. Can we chat?`,
+    },
+  ];
   const [expanded, setExpanded] = useState(false);
   const cleanNumber = phoneNumber.replace(/\D/g, "");
 
@@ -52,7 +51,7 @@ export default function WhatsAppButton({
       {/* Expanded panel */}
       <div
         className={cn(
-          "fixed bottom-24 right-6 z-50",
+          "fixed bottom-24 right-6 z-40",
           "w-[320px] max-w-[calc(100vw-2rem)]",
           "bg-[var(--color-bg-surface)] rounded-2xl",
           "border border-[var(--color-text)]/10 shadow-2xl",

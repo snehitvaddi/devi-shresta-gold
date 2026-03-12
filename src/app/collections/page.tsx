@@ -7,7 +7,7 @@ import { getProducts } from "@/lib/data/products";
 export async function generateMetadata(): Promise<Metadata> {
   const orgData = await getOrgData(getCurrentOrgId());
   return {
-    title: `Collections | ${orgData.name}`,
+    title: "Collections",
     description: `Explore our curated collection of fine jewelry at ${orgData.name}. Gold necklaces, diamond rings, bridal sets, temple jewelry & more.`,
   };
 }

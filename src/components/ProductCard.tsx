@@ -1,13 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import type { Product } from '@/types';
 
 interface ProductCardProps {
   product: Product;
   showEnquire?: boolean;
+  whatsappNumber?: string;
 }
 
 function formatPrice(price: number, currency: string): string {
@@ -26,15 +27,24 @@ function getPriceRange(price: number): { low: number; high: number } {
   return { low: price - variance, high: price + variance };
 }
 
-export default function ProductCard({ product, showEnquire = true }: ProductCardProps) {
+export default function ProductCard({ product, showEnquire = true, whatsappNumber = '917337372922' }: ProductCardProps) {
+  const router = useRouter();
   const primaryImage = product.images.find((img) => img.isPrimary) ?? product.images[0];
   const hasDiscount = product.compareAtPrice && product.compareAtPrice > product.price;
 
   return (
-    <Link
-      href={`/collections/${product.slug}`}
+    <div
+      onClick={() => router.push(`/collections/${product.slug}`)}
+      role="link"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          router.push(`/collections/${product.slug}`);
+        }
+      }}
       className={cn(
-        'group block bg-[var(--color-bg-card)] rounded-[var(--radius-md)] overflow-hidden',
+        'group block bg-[var(--color-bg-card)] rounded-[var(--radius-md)] overflow-hidden cursor-pointer',
         'border border-transparent hover:border-[var(--color-primary)]/40',
         'transition-all duration-500',
         'hover:shadow-[var(--shadow-gold)]',
@@ -125,7 +135,7 @@ export default function ProductCard({ product, showEnquire = true }: ProductCard
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              window.open(`https://wa.me/917337372922?text=${encodeURIComponent(`Hi! I'm interested in: ${product.name}`)}`, "_blank");
+              window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I'm interested in: ${product.name}`)}`, "_blank");
             }}
             className="mt-3 w-full py-2 text-xs font-semibold rounded-md bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20 hover:bg-[var(--color-primary)] hover:text-[var(--color-bg)] transition-all duration-300"
           >
@@ -133,6 +143,6 @@ export default function ProductCard({ product, showEnquire = true }: ProductCard
           </button>
         )}
       </div>
-    </Link>
+    </div>
   );
 }

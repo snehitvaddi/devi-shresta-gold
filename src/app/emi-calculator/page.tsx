@@ -15,7 +15,7 @@ import EMICalculator from '@/components/EMICalculator';
 /* ── Metadata ── */
 
 export const metadata: Metadata = {
-  title: 'EMI Calculator | Devi Shresta Gold & Diamonds',
+  title: 'EMI Calculator',
   description:
     'Plan your jewelry purchase with easy EMI options. Calculate monthly installments for gold, diamond, and silver jewelry at Devi Shresta Gold & Diamonds, Vijayawada.',
 };

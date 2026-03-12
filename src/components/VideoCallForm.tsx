@@ -88,8 +88,9 @@ export default function VideoCallForm() {
       {/* Name & Phone */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="input-label">Name *</label>
+          <label htmlFor="vc-name" className="input-label">Name *</label>
           <input
+            id="vc-name"
             type="text"
             className="input"
             required
@@ -99,8 +100,9 @@ export default function VideoCallForm() {
           />
         </div>
         <div>
-          <label className="input-label">Phone *</label>
+          <label htmlFor="vc-phone" className="input-label">Phone *</label>
           <input
+            id="vc-phone"
             type="tel"
             className="input"
             required
@@ -114,8 +116,9 @@ export default function VideoCallForm() {
 
       {/* Email */}
       <div>
-        <label className="input-label">Email (optional)</label>
+        <label htmlFor="vc-email" className="input-label">Email (optional)</label>
         <input
+          id="vc-email"
           type="email"
           className="input"
           value={form.email}
@@ -127,8 +130,9 @@ export default function VideoCallForm() {
       {/* Date & Time */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="input-label">Preferred Date *</label>
+          <label htmlFor="vc-date" className="input-label">Preferred Date *</label>
           <input
+            id="vc-date"
             type="date"
             className="input"
             required
@@ -138,8 +142,9 @@ export default function VideoCallForm() {
           />
         </div>
         <div>
-          <label className="input-label">Preferred Time *</label>
+          <label htmlFor="vc-time" className="input-label">Preferred Time *</label>
           <select
+            id="vc-time"
             className="input"
             required
             value={form.time}
@@ -221,8 +226,9 @@ export default function VideoCallForm() {
 
       {/* Notes */}
       <div>
-        <label className="input-label">Any special requests? (optional)</label>
+        <label htmlFor="vc-notes" className="input-label">Any special requests? (optional)</label>
         <textarea
+          id="vc-notes"
           className="input"
           rows={3}
           value={form.notes}

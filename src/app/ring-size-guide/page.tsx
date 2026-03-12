@@ -4,10 +4,10 @@ import { Ruler, MessageCircle, CalendarCheck, Lightbulb } from 'lucide-react';
 import RingSizeTool from '@/components/RingSizeTool';
 
 export const metadata: Metadata = {
-  title: 'Ring Size Guide | Devi Shresta Gold & Diamonds',
+  title: 'Ring Size Guide',
   description: 'Find your perfect ring size at home. Interactive ring size chart with Indian, US, and UK sizes. Free professional sizing available at our Vijayawada store.',
   openGraph: {
-    title: 'Ring Size Guide | Devi Shresta Gold & Diamonds',
+    title: 'Ring Size Guide',
     description: 'Find your perfect ring size with our interactive guide. Indian, US & UK sizes.',
   },
 };

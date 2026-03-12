@@ -14,7 +14,7 @@ import { HandoverManager } from "@/lib/ai/handover";
 import { getOrgData, getCurrentOrgId, getCurrentDomain } from "@/lib/data/org";
 import { getProducts } from "@/lib/data/products";
 
-const VERIFY_TOKEN = process.env.WHATSAPP_VERIFY_TOKEN ?? "any-website-builder-verify";
+const VERIFY_TOKEN = process.env.WHATSAPP_VERIFY_TOKEN;
 const OWNER_PHONE = process.env.OWNER_WHATSAPP_PHONE ?? "";
 
 // Per-user conversation store (in-memory, reset on deploy)
@@ -32,6 +32,14 @@ export async function GET(request: NextRequest) {
   const mode = searchParams.get("hub.mode");
   const token = searchParams.get("hub.verify_token");
   const challenge = searchParams.get("hub.challenge");
+
+  if (!VERIFY_TOKEN) {
+    console.error("[WhatsApp] WHATSAPP_VERIFY_TOKEN is not configured");
+    return NextResponse.json(
+      { error: "WhatsApp verify token not configured" },
+      { status: 500 },
+    );
+  }
 
   if (mode === "subscribe" && token === VERIFY_TOKEN) {
     console.log("[WhatsApp] Webhook verified");

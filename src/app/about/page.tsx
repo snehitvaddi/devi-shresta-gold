@@ -9,7 +9,7 @@ import ReviewCarousel from "@/components/ReviewCarousel";
 export async function generateMetadata(): Promise<Metadata> {
   const orgData = await getOrgData(getCurrentOrgId());
   return {
-    title: `About Us | ${orgData.name}`,
+    title: "About Us",
     description: `Learn about ${orgData.name} - ${orgData.tagline}`,
   };
 }

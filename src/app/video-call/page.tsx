@@ -4,10 +4,10 @@ import { Video, Phone, Eye, CalendarCheck, MessageCircle, MapPin, Sparkles, Cloc
 import VideoCallForm from '@/components/VideoCallForm';
 
 export const metadata: Metadata = {
-  title: 'Video Call Shopping | Devi Shresta Gold & Diamonds',
+  title: 'Video Call Shopping',
   description: 'Shop jewelry from home with a live video call. Our experts show you pieces in real lighting, answer questions, and help you choose — all from the comfort of your couch.',
   openGraph: {
-    title: 'Video Call Shopping | Devi Shresta Gold & Diamonds',
+    title: 'Video Call Shopping',
     description: 'Book a live video call with our jewelry experts. See pieces up close from anywhere.',
   },
 };

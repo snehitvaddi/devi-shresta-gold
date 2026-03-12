@@ -7,6 +7,7 @@ interface AboutSnippetProps {
   description: string;
   tagline: string;
   features?: string[];
+  yearsExperience?: string;
 }
 
 export default function AboutSnippet({
@@ -14,6 +15,7 @@ export default function AboutSnippet({
   description,
   tagline,
   features = [],
+  yearsExperience = '35+',
 }: AboutSnippetProps) {
   return (
     <section className="section overflow-hidden">
@@ -52,7 +54,7 @@ export default function AboutSnippet({
               )}
             >
               <span className="text-3xl font-bold" style={{ fontFamily: 'var(--font-heading)' }}>
-                35+
+                {yearsExperience}
               </span>
               <span className="text-xs font-semibold uppercase tracking-wider">
                 Years

@@ -132,9 +132,10 @@ export default function RingSizeTool() {
 
           {/* Input */}
           <div className="space-y-2">
-            <label className="input-label">Enter circumference (mm)</label>
+            <label htmlFor="ring-circumference" className="input-label">Enter circumference (mm)</label>
             <div className="relative">
               <input
+                id="ring-circumference"
                 type="number"
                 value={circumference}
                 onChange={(e) => setCircumference(e.target.value)}
@@ -190,8 +191,9 @@ export default function RingSizeTool() {
 
             {/* Slider */}
             <div className="w-full space-y-2">
-              <label className="input-label">Adjust diameter: {diameter.toFixed(1)}mm</label>
+              <label htmlFor="ring-diameter" className="input-label">Adjust diameter: {diameter.toFixed(1)}mm</label>
               <input
+                id="ring-diameter"
                 type="range"
                 min="12"
                 max="22"
