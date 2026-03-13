@@ -68,7 +68,7 @@ export default function VideoCallPage() {
       <section className="section bg-[var(--color-bg-surface)]">
         <div className="container-site">
           <div className="text-center mb-12">
-            <span className="badge mb-4">How It Works</span>
+            <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-text-muted)]">How It Works</span>
             <h2
               className="text-3xl md:text-4xl font-bold text-[var(--color-text)]"
               style={{ fontFamily: 'var(--font-heading)' }}

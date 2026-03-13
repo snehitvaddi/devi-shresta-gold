@@ -177,7 +177,7 @@ export default function ExchangePolicyPage() {
         <div className="container-site">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <span className="badge mb-4">Exchange</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4 block">Exchange</span>
               <h2
                 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4"
                 style={{ fontFamily: "var(--font-heading)" }}
@@ -239,7 +239,7 @@ export default function ExchangePolicyPage() {
         <div className="container-site">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <span className="badge mb-4">How It Works</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4 block">How It Works</span>
               <h2
                 className="text-3xl md:text-4xl font-bold text-gradient mb-4"
                 style={{ fontFamily: "var(--font-heading)" }}
@@ -309,7 +309,7 @@ export default function ExchangePolicyPage() {
         <div className="container-site">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <span className="badge mb-4">Buyback</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-text-muted)] mb-4 block">Buyback</span>
               <h2
                 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4"
                 style={{ fontFamily: "var(--font-heading)" }}
@@ -421,7 +421,7 @@ export default function ExchangePolicyPage() {
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 mb-4">
                 <HelpCircle size={20} className="text-[var(--color-primary)]" />
-                <span className="badge">FAQ</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-text-muted)]">FAQ</span>
               </div>
               <h2
                 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4"

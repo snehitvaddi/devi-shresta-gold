@@ -20,6 +20,8 @@ interface ProductGridProps {
   defaultCategory?: string; // slug value
 }
 
+const LOAD_MORE_COUNT = 8;
+
 export default function ProductGrid({
   products,
   categories,
@@ -29,6 +31,7 @@ export default function ProductGrid({
   defaultCategory,
 }: ProductGridProps) {
   const [activeSlug, setActiveSlug] = useState(defaultCategory || 'all');
+  const [visibleCount, setVisibleCount] = useState(LOAD_MORE_COUNT);
 
   const allCategories = useMemo(() => {
     if (categories && categories.length > 0) {
@@ -55,6 +58,15 @@ export default function ProductGrid({
     return limit ? list.slice(0, limit) : list;
   }, [products, activeSlug, limit]);
 
+  // Reset visible count when category changes
+  const handleCategoryChange = (slug: string) => {
+    setActiveSlug(slug);
+    setVisibleCount(LOAD_MORE_COUNT);
+  };
+
+  const visibleProducts = filtered.slice(0, visibleCount);
+  const hasMore = filtered.length > visibleCount;
+
   return (
     <section className="section">
       <div className="container-site">
@@ -77,7 +89,7 @@ export default function ProductGrid({
             {allCategories.map((cat) => (
               <button
                 key={cat.slug}
-                onClick={() => setActiveSlug(cat.slug)}
+                onClick={() => handleCategoryChange(cat.slug)}
                 className={cn(
                   'px-5 py-2 text-sm uppercase tracking-wider rounded-full transition-all duration-300',
                   activeSlug === cat.slug
@@ -91,9 +103,9 @@ export default function ProductGrid({
           </div>
         )}
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((product) => (
+        {/* Grid — 2 cols mobile, 3 cols md, 4 cols lg */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+          {visibleProducts.map((product) => (
             <div
               key={product.id}
               className="animate-fade-in"
@@ -112,7 +124,19 @@ export default function ProductGrid({
           </div>
         )}
 
-        {/* View All link */}
+        {/* Load More button */}
+        {hasMore && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setVisibleCount((prev) => prev + LOAD_MORE_COUNT)}
+              className="btn btn-outline"
+            >
+              Load More ({filtered.length - visibleCount} remaining)
+            </button>
+          </div>
+        )}
+
+        {/* View All link (when using external limit prop like on homepage) */}
         {limit && products.length > limit && (
           <div className="text-center mt-12">
             <Link href="/collections" className="btn btn-outline">

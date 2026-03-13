@@ -1,5 +1,8 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
-import { Instagram, Facebook, MessageCircle, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Instagram, Facebook, MessageCircle, MapPin, Phone, Mail, Clock, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { OrgData } from '@/types';
 
@@ -7,8 +10,71 @@ interface FooterProps {
   orgData: OrgData;
 }
 
+function FooterAccordion({
+  title,
+  children,
+  openSection,
+  sectionKey,
+  toggle,
+}: {
+  title: string;
+  children: React.ReactNode;
+  openSection: string | null;
+  sectionKey: string;
+  toggle: (key: string) => void;
+}) {
+  const isOpen = openSection === sectionKey;
+
+  return (
+    <div>
+      {/* Mobile: clickable heading */}
+      <button
+        type="button"
+        onClick={() => toggle(sectionKey)}
+        className="md:hidden flex items-center justify-between w-full text-left"
+      >
+        <h4 className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary)]">
+          {title}
+        </h4>
+        <ChevronDown
+          size={16}
+          className={cn(
+            'text-[var(--color-primary)] transition-transform duration-300',
+            isOpen && 'rotate-180',
+          )}
+        />
+      </button>
+
+      {/* Desktop: static heading */}
+      <h4 className="hidden md:block text-sm font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-6">
+        {title}
+      </h4>
+
+      {/* Mobile: collapsible content */}
+      <div
+        className={cn(
+          'md:hidden overflow-hidden transition-all duration-300',
+          isOpen ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0',
+        )}
+      >
+        {children}
+      </div>
+
+      {/* Desktop: always visible */}
+      <div className="hidden md:block">
+        {children}
+      </div>
+    </div>
+  );
+}
+
 export default function Footer({ orgData }: FooterProps) {
   const year = new Date().getFullYear();
+  const [openSection, setOpenSection] = useState<string | null>(null);
+
+  const toggle = (key: string) => {
+    setOpenSection((prev) => (prev === key ? null : key));
+  };
 
   return (
     <footer className="bg-[var(--color-bg-surface)] border-t border-[var(--color-text)]/5">
@@ -29,12 +95,12 @@ export default function Footer({ orgData }: FooterProps) {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4
-              className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-6"
-            >
-              Quick Links
-            </h4>
+          <FooterAccordion
+            title="Quick Links"
+            sectionKey="links"
+            openSection={openSection}
+            toggle={toggle}
+          >
             <ul className="space-y-3">
               {[
                 { label: 'Home', href: '/' },
@@ -56,15 +122,15 @@ export default function Footer({ orgData }: FooterProps) {
                 </li>
               ))}
             </ul>
-          </div>
+          </FooterAccordion>
 
           {/* Contact Info */}
-          <div>
-            <h4
-              className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-6"
-            >
-              Contact Info
-            </h4>
+          <FooterAccordion
+            title="Contact Info"
+            sectionKey="contact"
+            openSection={openSection}
+            toggle={toggle}
+          >
             <ul className="space-y-4 text-sm text-[var(--color-text-muted)]">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-[var(--color-primary)] mt-0.5 shrink-0" />
@@ -103,15 +169,15 @@ export default function Footer({ orgData }: FooterProps) {
                 </span>
               </li>
             </ul>
-          </div>
+          </FooterAccordion>
 
           {/* Social Media */}
-          <div>
-            <h4
-              className="text-sm font-semibold uppercase tracking-widest text-[var(--color-primary)] mb-6"
-            >
-              Follow Us
-            </h4>
+          <FooterAccordion
+            title="Follow Us"
+            sectionKey="social"
+            openSection={openSection}
+            toggle={toggle}
+          >
             <div className="flex items-center gap-4">
               {orgData.socialLinks.instagram && (
                 <a
@@ -162,7 +228,7 @@ export default function Footer({ orgData }: FooterProps) {
                 </a>
               )}
             </div>
-          </div>
+          </FooterAccordion>
         </div>
       </div>
 

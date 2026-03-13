@@ -71,7 +71,7 @@ export default function RingSizeGuidePage() {
           <div className="text-center mb-10">
             <div className="inline-flex items-center gap-2 mb-4">
               <Lightbulb size={20} className="text-[var(--color-primary)]" />
-              <span className="badge">Pro Tips</span>
+              <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-text-muted)]">Pro Tips</span>
             </div>
             <h2
               className="text-3xl md:text-4xl font-bold text-[var(--color-text)]"

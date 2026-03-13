@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Clock, Star, Phone } from "lucide-react";
+import { Clock, Star, Phone, Gem, PenTool, Award } from "lucide-react";
 import BookingForm from "@/components/BookingForm";
 import { getOrgData, getCurrentOrgId } from "@/lib/data/org";
 
@@ -23,7 +22,7 @@ export default async function BookPage() {
   return (
     <div className="pt-24">
       {/* Page Header */}
-      <section className="section pb-0 text-center">
+      <section className="pb-0 text-center">
         <div className="container-site max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-4 mb-6">
             <span className="block w-12 h-px bg-[var(--color-primary)]" />
@@ -44,27 +43,31 @@ export default async function BookPage() {
       </section>
 
       {/* Services Overview */}
-      <section className="section pt-8 pb-4">
+      <section className="pt-8 pb-4">
         <div className="container-site max-w-4xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             {[
               {
                 title: "Consultation",
                 desc: "Expert guidance on choosing the perfect piece",
+                icon: Gem,
               },
               {
                 title: "Custom Design",
                 desc: "Bring your dream jewelry to life with our artisans",
+                icon: PenTool,
               },
               {
                 title: "Valuation",
                 desc: "Professional assessment and certification services",
+                icon: Award,
               },
             ].map((service) => (
               <div
                 key={service.title}
                 className="p-5 bg-[var(--color-bg-surface)] rounded-[var(--radius-md)] border border-[var(--color-text)]/5 text-center"
               >
+                <service.icon size={28} className="text-[var(--color-primary)] mx-auto mb-3" />
                 <h3
                   className="text-base font-semibold text-[var(--color-text)] mb-1"
                   style={{ fontFamily: "var(--font-heading)" }}
@@ -85,7 +88,7 @@ export default async function BookPage() {
 
       {/* Business Hours & Social Proof */}
       <section className="section">
-        <div className="container-site max-w-4xl mx-auto">
+        <div className="container-site max-w-4xl mx-auto pb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Hours */}
             <div className="p-6 bg-[var(--color-bg-surface)] rounded-[var(--radius-lg)] border border-[var(--color-text)]/5">

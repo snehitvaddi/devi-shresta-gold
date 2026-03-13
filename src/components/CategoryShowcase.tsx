@@ -67,7 +67,7 @@ export default function CategoryShowcase({ categories }: CategoryShowcaseProps) 
                 >
                   {cat.name}
                 </h3>
-                <p className="text-xs text-[var(--color-text-muted)] line-clamp-1">
+                <p className="text-xs text-[var(--color-text)]/70 line-clamp-1">
                   {cat.description}
                 </p>
               </div>

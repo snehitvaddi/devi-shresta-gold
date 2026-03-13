@@ -99,19 +99,6 @@ export default function BookingForm({ services = DEFAULT_SERVICES }: BookingForm
   return (
     <section className="section" id="booking">
       <div className="container-site max-w-2xl mx-auto">
-        <div className="text-center mb-10">
-          <h2
-            className="text-3xl md:text-4xl font-bold text-gradient mb-4"
-            style={{ fontFamily: 'var(--font-heading)' }}
-          >
-            Book an Appointment
-          </h2>
-          <p className="text-[var(--color-text-muted)]">
-            Schedule a private consultation with our jewelry experts.
-          </p>
-          <div className="divider max-w-xs mx-auto" />
-        </div>
-
         <form
           onSubmit={handleSubmit}
           className="bg-[var(--color-bg-surface)] rounded-[var(--radius-lg)] p-6 md:p-10 border border-[var(--color-text)]/5 space-y-6"

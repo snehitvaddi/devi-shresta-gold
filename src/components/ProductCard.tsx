@@ -45,21 +45,21 @@ export default function ProductCard({ product, showEnquire = true, whatsappNumbe
       }}
       className={cn(
         'group block bg-[var(--color-bg-card)] rounded-[var(--radius-md)] overflow-hidden cursor-pointer',
-        'border border-transparent hover:border-[var(--color-primary)]/40',
-        'transition-all duration-500',
+        'border border-transparent',
+        'transition-all duration-300',
+        'hover:scale-[1.02] hover:border-[var(--color-primary)]/30',
         'hover:shadow-[var(--shadow-gold)]',
-        'hover:-translate-y-1',
       )}
     >
-      {/* Image Container */}
-      <div className="relative aspect-square overflow-hidden bg-[var(--color-bg-surface)]">
+      {/* Image Container — shorter aspect on mobile for compact cards */}
+      <div className="relative aspect-[4/5] md:aspect-square overflow-hidden bg-[var(--color-bg-surface)]">
         {primaryImage ? (
           <Image
             src={primaryImage.url}
             alt={primaryImage.alt}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-110"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-[var(--color-text-muted)]">
@@ -78,69 +78,81 @@ export default function ProductCard({ product, showEnquire = true, whatsappNumbe
         </div>
 
         {/* Category badge */}
-        <span className="badge absolute top-3 left-3">
+        <span className="badge absolute top-2 left-2 text-[10px] md:text-xs md:top-3 md:left-3">
           {product.category}
         </span>
 
         {/* Discount badge */}
         {hasDiscount && (
-          <span className="absolute top-3 right-3 px-2 py-1 text-xs font-semibold rounded bg-[var(--color-error)] text-white">
+          <span className="absolute top-2 right-2 md:top-3 md:right-3 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-semibold rounded bg-[var(--color-error)] text-white">
             SAVE {Math.round(((product.compareAtPrice! - product.price) / product.compareAtPrice!) * 100)}%
           </span>
         )}
       </div>
 
       {/* Info */}
-      <div className="p-4">
+      <div className="p-2.5 md:p-4">
         <h3
-          className="text-base font-semibold text-[var(--color-text)] mb-1 line-clamp-1 group-hover:text-[var(--color-primary)] transition-colors"
+          className="text-sm md:text-base font-semibold text-[var(--color-text)] mb-0.5 md:mb-1 line-clamp-1 group-hover:text-[var(--color-primary)] transition-colors"
           style={{ fontFamily: 'var(--font-heading)' }}
         >
           {product.name}
         </h3>
-        <p className="text-xs text-[var(--color-text-muted)] mb-3 line-clamp-1">
+        <p className="text-[10px] md:text-xs text-[var(--color-text-muted)] mb-2 md:mb-3 line-clamp-1">
           {product.shortDescription}
         </p>
 
         {/* Price range based on gold rate fluctuation */}
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-1 md:gap-2 flex-wrap">
           {hasDiscount ? (
             <>
-              <span className="text-lg font-bold text-[var(--color-primary)]">
+              <span className="text-base md:text-lg font-semibold text-[var(--color-primary)]">
                 {formatPrice(product.price, product.currency)}
               </span>
-              <span className="text-sm text-[var(--color-text-muted)] line-through">
+              <span className="text-xs md:text-sm text-[var(--color-text-muted)] line-through">
                 {formatPrice(product.compareAtPrice!, product.currency)}
               </span>
             </>
           ) : (
             <>
-              <span className="text-sm font-bold text-[var(--color-primary)]">
+              <span className="text-sm md:text-base font-semibold text-[var(--color-primary)]">
                 {formatPrice(getPriceRange(product.price).low, product.currency)}
               </span>
-              <span className="text-xs text-[var(--color-text-muted)]">—</span>
-              <span className="text-sm font-bold text-[var(--color-primary)]">
+              <span className="text-[10px] md:text-xs text-[var(--color-text-muted)]">—</span>
+              <span className="text-sm md:text-base font-semibold text-[var(--color-primary)]">
                 {formatPrice(getPriceRange(product.price).high, product.currency)}
               </span>
             </>
           )}
         </div>
-        <p className="text-[10px] text-[var(--color-text-muted)] mt-0.5">
+        <p className="text-[9px] md:text-[10px] text-[var(--color-text-muted)] mt-0.5">
           *Price varies with gold rate
         </p>
 
-        {/* Enquire / Add to Cart button */}
+        {/* Visible CTA buttons */}
         {showEnquire && (
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I'm interested in: ${product.name}`)}`, "_blank");
-            }}
-            className="mt-3 w-full py-2 text-xs font-semibold rounded-md bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20 hover:bg-[var(--color-primary)] hover:text-[var(--color-bg)] transition-all duration-300"
-          >
-            Enquire Now
-          </button>
+          <div className="flex gap-2 mt-2 md:mt-3">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I'm interested in: ${product.name}`)}`, "_blank");
+              }}
+              className="flex-1 py-1.5 md:py-2 text-[10px] md:text-xs font-semibold rounded-md bg-[var(--color-primary)]/10 text-[var(--color-primary)] border border-[var(--color-primary)]/20 hover:bg-[var(--color-primary)] hover:text-[var(--color-bg)] transition-all duration-300"
+            >
+              Enquire
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                router.push(`/collections/${product.slug}`);
+              }}
+              className="flex-1 py-1.5 md:py-2 text-[10px] md:text-xs font-semibold rounded-md text-[var(--color-text-muted)] border border-[var(--color-text)]/10 hover:border-[var(--color-primary)]/40 hover:text-[var(--color-primary)] transition-all duration-300"
+            >
+              View Details
+            </button>
+          </div>
         )}
       </div>
     </div>
