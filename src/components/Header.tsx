@@ -12,7 +12,7 @@ const navLinks = [
   { label: 'Video Call', href: '/video-call' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Book Appointment', href: '/booking' },
+  { label: 'Book', href: '/book' },
 ];
 
 interface HeaderProps {
@@ -117,12 +117,12 @@ export default function Header({ businessName, whatsappNumber, domain }: HeaderP
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="link-underline text-sm uppercase tracking-widest text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors duration-300"
+              className="link-underline text-xs xl:text-sm uppercase tracking-widest whitespace-nowrap text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors duration-300"
             >
               {link.label}
             </Link>
