@@ -29,6 +29,7 @@ const cormorant = Cormorant_Garamond({
 
 export async function generateMetadata(): Promise<Metadata> {
   const orgData = await getOrgData(getCurrentOrgId());
+  const siteUrl = "https://devi-shresta-gold.vercel.app";
   return {
     title: {
       default: `${orgData.name} | ${orgData.tagline}`,
@@ -37,12 +38,49 @@ export async function generateMetadata(): Promise<Metadata> {
     description: orgData.description,
     keywords: (orgData as unknown as Record<string, unknown>).seo
       ? ((orgData as unknown as Record<string, unknown>).seo as { keywords?: string[] }).keywords
-      : undefined,
+      : [
+          "gold jewelry Vijayawada",
+          "diamond jewelry Vijayawada",
+          "temple jewelry",
+          "bridal jewelry",
+          "22K gold necklace",
+          "Devi Shresta Gold",
+          "gold store Governorpet",
+          "South Indian jewelry",
+        ],
+    metadataBase: new URL(siteUrl),
+    icons: {
+      icon: [
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      ],
+      apple: "/apple-touch-icon.png",
+    },
+    manifest: "/site.webmanifest",
     openGraph: {
-      title: orgData.name,
+      title: `${orgData.name} — Premium Gold & Diamond Jewelry in Vijayawada`,
       description: orgData.description,
       type: "website",
       siteName: orgData.name,
+      url: siteUrl,
+      locale: "en_IN",
+      images: [
+        {
+          url: "/images/og-image.jpg",
+          width: 1920,
+          height: 1080,
+          alt: `${orgData.name} — Gold & Diamond Jewelry Store, Vijayawada`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${orgData.name} — Premium Gold & Diamond Jewelry`,
+      description: orgData.description,
+      images: ["/images/og-image.jpg"],
+    },
+    other: {
+      "google-site-verification": "REPLACE_WITH_YOUR_VERIFICATION_CODE",
     },
   };
 }
@@ -57,8 +95,54 @@ export default async function RootLayout({
   const orgData = await getOrgData(orgId);
   const whatsappNumber = orgData.socialLinks.whatsapp;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    name: orgData.name,
+    description: orgData.description,
+    url: "https://devi-shresta-gold.vercel.app",
+    telephone: "+91-7337372922",
+    image: "https://devi-shresta-gold.vercel.app/images/og-image.jpg",
+    logo: "https://devi-shresta-gold.vercel.app/images/icon-512.png",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Governorpet",
+      addressLocality: "Vijayawada",
+      addressRegion: "AP",
+      postalCode: "520002",
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 16.5062,
+      longitude: 80.6480,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.6",
+      reviewCount: "185",
+      bestRating: "5",
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "10:00",
+      closes: "21:00",
+    },
+    priceRange: "₹₹₹",
+    sameAs: [
+      "https://www.instagram.com/devishrestagoldanddiamonds/",
+    ],
+  };
+
   return (
     <html lang="en" data-domain={domain}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${playfair.variable} ${cormorant.variable} antialiased`}
         data-org={orgId}

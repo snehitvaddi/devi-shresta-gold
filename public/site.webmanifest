@@ -1,0 +1,21 @@
+{
+  "name": "Devi Shresta Gold & Diamonds",
+  "short_name": "Devi Shresta",
+  "description": "Premium gold and diamond jewelry store in Vijayawada — traditional South Indian temple jewelry, bridal sets, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
