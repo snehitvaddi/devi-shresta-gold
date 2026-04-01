@@ -1,0 +1,115 @@
+{
+  "products": [
+    {
+      "id": "prod-001",
+      "path": "/orgs/davis-resta/images/lakshmi-temple-necklace.jpg"
+    },
+    {
+      "id": "prod-002",
+      "path": "/orgs/davis-resta/images/diamond-choker-set.jpg"
+    },
+    {
+      "id": "prod-003",
+      "path": "/orgs/davis-resta/images/gold-haarams.jpg"
+    },
+    {
+      "id": "prod-005",
+      "path": "/orgs/davis-resta/images/diamond-tennis-bracelet.jpg"
+    },
+    {
+      "id": "prod-009",
+      "path": "/orgs/davis-resta/images/diamond-cluster-ring.jpg"
+    },
+    {
+      "id": "prod-010",
+      "path": "/orgs/davis-resta/images/gold-jhumka-earrings.jpg"
+    },
+    {
+      "id": "prod-024",
+      "path": "/orgs/davis-resta/images/daily-wear-diamond-earrings.jpg"
+    },
+    {
+      "id": "prod-014",
+      "path": "/orgs/davis-resta/images/mangalsutra-diamond.jpg"
+    },
+    {
+      "id": "prod-026",
+      "path": "/orgs/davis-resta/images/diamond-solitaire-pendant.jpg"
+    },
+    {
+      "id": "prod-016",
+      "path": "/orgs/davis-resta/images/diamond-bridal-necklace-set.jpg"
+    },
+    {
+      "id": "prod-023",
+      "path": "/orgs/davis-resta/images/maang-tikka-kundan.jpg"
+    },
+    {
+      "id": "prod-025",
+      "path": "/orgs/davis-resta/images/gold-nose-ring.jpg"
+    },
+    {
+      "id": "prod-017",
+      "path": "/orgs/davis-resta/images/temple-peacock-necklace.jpg"
+    },
+    {
+      "id": "prod-019",
+      "path": "/orgs/davis-resta/images/mens-gold-chain-bismark.jpg"
+    },
+    {
+      "id": "prod-006",
+      "path": "/orgs/davis-resta/images/gold-kada-antique.jpg"
+    },
+    {
+      "id": "prod-011",
+      "path": "/orgs/davis-resta/images/diamond-stud-earrings.jpg"
+    },
+    {
+      "id": "prod-012",
+      "path": "/orgs/davis-resta/images/chandbali-earrings.jpg"
+    },
+    {
+      "id": "prod-018",
+      "path": "/orgs/davis-resta/images/temple-kemp-choker.jpg"
+    },
+    {
+      "id": "prod-029",
+      "path": "/orgs/davis-resta/images/mens-gold-bracelet.jpg"
+    },
+    {
+      "id": "prod-021",
+      "path": "/orgs/davis-resta/images/lakshmi-gold-coin-10g.jpg"
+    },
+    {
+      "id": "prod-030",
+      "path": "/orgs/davis-resta/images/lakshmi-gold-coin-5g.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "mens",
+      "path": "/orgs/davis-resta/images/cat-mens.jpg"
+    },
+    {
+      "slug": "coins",
+      "path": "/orgs/davis-resta/images/cat-coins.jpg"
+    },
+    {
+      "slug": "earrings",
+      "path": "/orgs/davis-resta/images/cat-earrings.jpg"
+    }
+  ],
+  "pages": [
+    {
+      "key": "about-hero",
+      "path": "/orgs/davis-resta/images/about-hero.jpg"
+    },
+    {
+      "key": "workshop",
+      "path": "/orgs/davis-resta/images/workshop.jpg"
+    }
+  ],
+  "generated": "2026-04-01T18:13:20.936Z",
+  "total": 26,
+  "failed": 0
+}

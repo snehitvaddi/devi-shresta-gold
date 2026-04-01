@@ -12,12 +12,12 @@ const categoryImages: Record<string, string> = {
   necklaces: 'https://images.unsplash.com/photo-1769500804057-ca1391bf4617?w=600&q=80',
   bangles: 'https://images.unsplash.com/photo-1617191880362-aac615de3c26?w=600&q=80',
   rings: 'https://images.unsplash.com/photo-1509119546138-bccc862c68de?w=600&q=80',
-  earrings: 'https://images.unsplash.com/photo-1629381565693-75f7aab090b9?w=600&q=80',
+  earrings: '/images/categories/cat-earrings.jpg',
   pendants: 'https://images.unsplash.com/photo-1585711715631-1e6bf224f092?w=600&q=80',
   bridal: 'https://images.unsplash.com/photo-1594140700405-f401ff47b29e?w=600&q=80',
   temple: 'https://images.unsplash.com/photo-1742891603547-950f510710d7?w=600&q=80',
-  mens: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80',
-  coins: 'https://images.unsplash.com/photo-1772461286710-ea453f875bb7?w=600&q=80',
+  mens: '/images/categories/cat-mens.jpg',
+  coins: '/images/categories/cat-coins.jpg',
 };
 
 export default function CategoryShowcase({ categories }: CategoryShowcaseProps) {

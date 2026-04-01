@@ -50,7 +50,7 @@ export default async function AboutPage() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1920"
+            src="/images/pages/about-hero.jpg"
             alt="Jewelry craftsmanship"
             fill
             className="object-cover opacity-20"
@@ -89,7 +89,7 @@ export default async function AboutPage() {
             <div className="relative">
               <div className="relative aspect-[4/5] rounded-[var(--radius-lg)] overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800"
+                  src="/images/pages/workshop.jpg"
                   alt="Our workshop"
                   fill
                   className="object-cover"

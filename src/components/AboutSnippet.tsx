@@ -25,7 +25,7 @@ export default function AboutSnippet({
           <div className="relative">
             <div className="relative aspect-[4/5] rounded-[var(--radius-lg)] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=800"
+                src="/images/pages/about-hero.jpg"
                 alt="Jewelry craftsmanship"
                 fill
                 className="object-cover"

@@ -21,7 +21,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80",
+          "url": "/images/products/lakshmi-temple-necklace.jpg",
           "alt": "Lakshmi Temple Gold Necklace - 22K gold traditional temple design",
           "isPrimary": true,
           "order": 1
@@ -60,7 +60,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1610694955371-d4a3e0ce4b52?w=800&q=80",
+          "url": "/images/products/diamond-choker-set.jpg",
           "alt": "Diamond Choker Necklace Set - 18K white gold with VS diamonds",
           "isPrimary": true,
           "order": 1
@@ -100,7 +100,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80",
+          "url": "/images/products/gold-haarams.jpg",
           "alt": "Traditional Gold Haarams - 22K gold long necklace with mango motifs",
           "isPrimary": true,
           "order": 1
@@ -178,7 +178,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&q=80",
+          "url": "/images/products/diamond-tennis-bracelet.jpg",
           "alt": "Diamond Tennis Bracelet - 18K white gold with 2.5ct diamonds",
           "isPrimary": true,
           "order": 1
@@ -218,7 +218,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80",
+          "url": "/images/products/gold-kada-antique.jpg",
           "alt": "Gold Kada Antique Finish - 22K gold with temple motifs",
           "isPrimary": true,
           "order": 1
@@ -338,7 +338,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1608042314453-ae338d80c427?w=800&q=80",
+          "url": "/images/products/diamond-cluster-ring.jpg",
           "alt": "Diamond Cluster Ring - 18K rose gold floral pattern",
           "isPrimary": true,
           "order": 1
@@ -376,7 +376,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=800&q=80",
+          "url": "/images/products/gold-jhumka-earrings.jpg",
           "alt": "Gold Jhumka Earrings Traditional - 22K gold with bead work",
           "isPrimary": true,
           "order": 1
@@ -415,7 +415,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&q=80",
+          "url": "/images/products/diamond-stud-earrings.jpg",
           "alt": "Diamond Stud Earrings - 1.0ct IGI certified in 18K white gold",
           "isPrimary": true,
           "order": 1
@@ -456,7 +456,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1629224316810-9d8805b95e76?w=800&q=80",
+          "url": "/images/products/chandbali-earrings.jpg",
           "alt": "Chandbali Gold Earrings - 22K gold with pearl drops and meenakari",
           "isPrimary": true,
           "order": 1
@@ -537,7 +537,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80",
+          "url": "/images/products/mangalsutra-diamond.jpg",
           "alt": "Black Beads Mangalsutra Diamond - 18K gold with black beads",
           "isPrimary": true,
           "order": 1
@@ -618,7 +618,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1515562141589-67f0d999b36b?w=800&q=80",
+          "url": "/images/products/diamond-bridal-necklace-set.jpg",
           "alt": "Diamond Bridal Necklace Set - 18K gold with 5ct diamonds",
           "isPrimary": true,
           "order": 1
@@ -659,7 +659,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80",
+          "url": "/images/products/temple-peacock-necklace.jpg",
           "alt": "Temple Peacock Gold Necklace - 22K gold with ruby and emerald",
           "isPrimary": true,
           "order": 1
@@ -700,7 +700,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=800&q=80",
+          "url": "/images/products/temple-kemp-choker.jpg",
           "alt": "Temple Kemp Stone Choker - 22K gold with kemp stones",
           "isPrimary": true,
           "order": 1
@@ -740,7 +740,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800&q=80",
+          "url": "/images/products/mens-gold-chain-bismark.jpg",
           "alt": "Mens Gold Chain Bismark Design - 22K gold 24 inch",
           "isPrimary": true,
           "order": 1
@@ -820,7 +820,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1589787168422-831837e0ed2c?w=800&q=80",
+          "url": "/images/products/lakshmi-gold-coin-10g.jpg",
           "alt": "Lakshmi Gold Coin 10 Grams - 24K pure gold BIS hallmarked",
           "isPrimary": true,
           "order": 1
@@ -899,7 +899,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1594552072238-5c4ed37432a8?w=800&q=80",
+          "url": "/images/products/maang-tikka-kundan.jpg",
           "alt": "Maang Tikka Gold with Kundan - 22K gold bridal head ornament",
           "isPrimary": true,
           "order": 1
@@ -938,7 +938,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=800&q=80",
+          "url": "/images/products/daily-wear-diamond-earrings.jpg",
           "alt": "Daily Wear Diamond Earrings - 18K gold lightweight drops",
           "isPrimary": true,
           "order": 1
@@ -978,7 +978,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1610173826608-e2a51e274e45?w=800&q=80",
+          "url": "/images/products/gold-nose-ring.jpg",
           "alt": "Gold Nose Ring Traditional - 22K gold nath with pearl drops",
           "isPrimary": true,
           "order": 1
@@ -1016,7 +1016,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?w=800&q=80",
+          "url": "/images/products/diamond-solitaire-pendant.jpg",
           "alt": "Diamond Solitaire Pendant - 0.50ct in 18K white gold",
           "isPrimary": true,
           "order": 1
@@ -1136,7 +1136,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1622398925373-3f91b1e275f5?w=800&q=80",
+          "url": "/images/products/mens-gold-bracelet.jpg",
           "alt": "Mens Gold Bracelet Heavy Link - 22K gold curb link",
           "isPrimary": true,
           "order": 1
@@ -1177,7 +1177,7 @@
       ],
       "images": [
         {
-          "url": "https://images.unsplash.com/photo-1607292803062-5b8ff0531b88?w=800&q=80",
+          "url": "/images/products/lakshmi-gold-coin-5g.jpg",
           "alt": "Lakshmi Gold Coin 5 Grams - 24K pure gold BIS hallmarked",
           "isPrimary": true,
           "order": 1
