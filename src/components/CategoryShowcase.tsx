@@ -9,13 +9,13 @@ interface CategoryShowcaseProps {
 
 // Indian jewelry category images — verified traditional Indian gold jewelry
 const categoryImages: Record<string, string> = {
-  necklaces: 'https://images.unsplash.com/photo-1769500804057-ca1391bf4617?w=600&q=80',
-  bangles: 'https://images.unsplash.com/photo-1617191880362-aac615de3c26?w=600&q=80',
-  rings: 'https://images.unsplash.com/photo-1509119546138-bccc862c68de?w=600&q=80',
+  necklaces: '/images/categories/cat-necklaces.jpg',
+  bangles: '/images/categories/cat-bangles.jpg',
+  rings: '/images/categories/cat-rings.jpg',
   earrings: '/images/categories/cat-earrings.jpg',
-  pendants: 'https://images.unsplash.com/photo-1585711715631-1e6bf224f092?w=600&q=80',
-  bridal: 'https://images.unsplash.com/photo-1594140700405-f401ff47b29e?w=600&q=80',
-  temple: 'https://images.unsplash.com/photo-1742891603547-950f510710d7?w=600&q=80',
+  pendants: '/images/categories/cat-pendants.jpg',
+  bridal: '/images/categories/cat-bridal.jpg',
+  temple: '/images/categories/cat-temple.jpg',
   mens: '/images/categories/cat-mens.jpg',
   coins: '/images/categories/cat-coins.jpg',
 };

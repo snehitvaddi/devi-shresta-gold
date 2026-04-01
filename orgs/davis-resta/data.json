@@ -54,15 +54,15 @@
     "Engraving Services"
   ],
   "categories": [
-    { "id": "necklaces", "name": "Necklaces", "slug": "necklaces", "description": "Traditional and contemporary gold & diamond necklaces, chokers, and haarams", "image": "https://images.unsplash.com/photo-1769500804057-ca1391bf4617?w=600&q=80", "order": 1 },
-    { "id": "bangles", "name": "Bangles & Bracelets", "slug": "bangles", "description": "Gold bangles, diamond bangles, kadas, and bracelets", "image": "https://images.unsplash.com/photo-1617191880362-aac615de3c26?w=600&q=80", "order": 2 },
-    { "id": "rings", "name": "Rings", "slug": "rings", "description": "Engagement rings, wedding bands, and fashion rings in gold and diamond", "image": "https://images.unsplash.com/photo-1509119546138-bccc862c68de?w=600&q=80", "order": 3 },
-    { "id": "earrings", "name": "Earrings", "slug": "earrings", "description": "Jhumkas, studs, drops, chandbalis, and diamond earrings", "image": "https://images.unsplash.com/photo-1629381565693-75f7aab090b9?w=600&q=80", "order": 4 },
-    { "id": "pendants", "name": "Pendants & Chains", "slug": "pendants", "description": "Gold chains, diamond pendants, and mangalsutra", "image": "https://images.unsplash.com/photo-1585711715631-1e6bf224f092?w=600&q=80", "order": 5 },
-    { "id": "bridal", "name": "Bridal Collections", "slug": "bridal", "description": "Complete bridal jewelry sets for Telugu, South Indian, and North Indian weddings", "image": "https://images.unsplash.com/photo-1594140700405-f401ff47b29e?w=600&q=80", "order": 6 },
-    { "id": "temple", "name": "Temple Jewelry", "slug": "temple", "description": "Traditional temple-inspired gold jewelry with Lakshmi, peacock, and mango motifs", "image": "https://images.unsplash.com/photo-1742891603547-950f510710d7?w=600&q=80", "order": 7 },
-    { "id": "mens", "name": "Men's Jewelry", "slug": "mens", "description": "Gold chains, rings, bracelets, and kada for men", "image": "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80", "order": 8 },
-    { "id": "coins", "name": "Gold Coins & Bars", "slug": "coins", "description": "Investment-grade gold coins, bars, and Lakshmi coins", "image": "https://images.unsplash.com/photo-1772461286710-ea453f875bb7?w=600&q=80", "order": 9 }
+    { "id": "necklaces", "name": "Necklaces", "slug": "necklaces", "description": "Traditional and contemporary gold & diamond necklaces, chokers, and haarams", "image": "/images/categories/cat-necklaces.jpg", "order": 1 },
+    { "id": "bangles", "name": "Bangles & Bracelets", "slug": "bangles", "description": "Gold bangles, diamond bangles, kadas, and bracelets", "image": "/images/categories/cat-bangles.jpg", "order": 2 },
+    { "id": "rings", "name": "Rings", "slug": "rings", "description": "Engagement rings, wedding bands, and fashion rings in gold and diamond", "image": "/images/categories/cat-rings.jpg", "order": 3 },
+    { "id": "earrings", "name": "Earrings", "slug": "earrings", "description": "Jhumkas, studs, drops, chandbalis, and diamond earrings", "image": "/images/categories/cat-earrings.jpg", "order": 4 },
+    { "id": "pendants", "name": "Pendants & Chains", "slug": "pendants", "description": "Gold chains, diamond pendants, and mangalsutra", "image": "/images/categories/cat-pendants.jpg", "order": 5 },
+    { "id": "bridal", "name": "Bridal Collections", "slug": "bridal", "description": "Complete bridal jewelry sets for Telugu, South Indian, and North Indian weddings", "image": "/images/categories/cat-bridal.jpg", "order": 6 },
+    { "id": "temple", "name": "Temple Jewelry", "slug": "temple", "description": "Traditional temple-inspired gold jewelry with Lakshmi, peacock, and mango motifs", "image": "/images/categories/cat-temple.jpg", "order": 7 },
+    { "id": "mens", "name": "Men's Jewelry", "slug": "mens", "description": "Gold chains, rings, bracelets, and kada for men", "image": "/images/categories/cat-mens.jpg", "order": 8 },
+    { "id": "coins", "name": "Gold Coins & Bars", "slug": "coins", "description": "Investment-grade gold coins, bars, and Lakshmi coins", "image": "/images/categories/cat-coins.jpg", "order": 9 }
   ],
   "testimonials": [
     {
