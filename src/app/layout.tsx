@@ -139,6 +139,12 @@ export default async function RootLayout({
   return (
     <html lang="en" data-domain={domain}>
       <head>
+        <meta property="og:image" content="https://devi-shresta-gold.vercel.app/images/og-image.jpg" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:alt" content="Devi Shresta Gold & Diamonds — Premium Jewelry Store, Vijayawada" />
+        <meta property="og:url" content="https://devi-shresta-gold.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
