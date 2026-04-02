@@ -151,8 +151,7 @@ export default function InstagramFeed({
           {postsWithShortcodes.map((post) => (
             <div
               key={post.id}
-              className="shrink-0 w-[300px] md:w-[340px] rounded-xl overflow-hidden border border-[var(--color-text)]/5 bg-[var(--color-bg-surface)] relative group"
-              style={{ height: "400px" }}
+              className="shrink-0 w-[220px] md:w-[250px] rounded-xl overflow-hidden border border-[var(--color-text)]/5 bg-[var(--color-bg-surface)] relative group aspect-[9/16]"
             >
               {post.shortcode ? (
                 <>
@@ -219,8 +218,7 @@ export default function InstagramFeed({
             href={instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 w-[300px] md:w-[340px] rounded-xl border-2 border-dashed border-[var(--color-primary)]/20 hover:border-[var(--color-primary)]/50 flex flex-col items-center justify-center gap-3 transition-all duration-300 group"
-            style={{ height: "400px" }}
+            className="shrink-0 w-[220px] md:w-[250px] rounded-xl border-2 border-dashed border-[var(--color-primary)]/20 hover:border-[var(--color-primary)]/50 flex flex-col items-center justify-center gap-3 transition-all duration-300 group aspect-[9/16]"
           >
             <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 p-[2px] group-hover:scale-110 transition-transform">
               <div className="w-full h-full rounded-full bg-[var(--color-bg)] flex items-center justify-center">
