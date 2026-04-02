@@ -66,10 +66,11 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: "en_IN",
       images: [
         {
-          url: "/images/og-image.jpg",
+          url: `${siteUrl}/images/og-image.jpg`,
           width: 1920,
           height: 1080,
           alt: `${orgData.name} — Gold & Diamond Jewelry Store, Vijayawada`,
+          type: "image/jpeg",
         },
       ],
     },
@@ -77,7 +78,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: `${orgData.name} — Premium Gold & Diamond Jewelry`,
       description: orgData.description,
-      images: ["/images/og-image.jpg"],
+      images: [`${siteUrl}/images/og-image.jpg`],
     },
     other: {
       "google-site-verification": "REPLACE_WITH_YOUR_VERIFICATION_CODE",
