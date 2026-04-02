@@ -122,51 +122,37 @@ export default async function HomePage() {
     },
   ];
 
-  // Instagram feed posts — using Unsplash images to represent real post content
-  // These represent actual post types from @devishrestagoldanddiamonds
-  // Real Instagram posts from @devishrestagoldanddiamonds — using actual shortcodes for embeds
-  const instagramPosts: InstaPost[] = [
-    {
-      id: "1",
-      imageUrl: "",
-      caption: "We're Going Bigger, Brighter, and Grander... Stay tuned for something extraordinary!",
-      likes: 342,
-      comments: 28,
-      postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/DJlsEO_suSj/",
-      shortcode: "DJlsEO_suSj",
-      type: "reel",
-    },
-    {
-      id: "2",
-      imageUrl: "",
-      caption: "Wear Your Culture with a Modern Statement. Traditional meets contemporary.",
-      likes: 287,
-      comments: 19,
-      postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/DC7Drrfh9ls/",
-      shortcode: "DC7Drrfh9ls",
-      type: "reel",
-    },
-    {
-      id: "3",
-      imageUrl: "",
-      caption: "This exquisite haram from Devi Shresta Gold & Diamonds is a masterpiece of traditional craftsmanship.",
-      likes: 456,
-      comments: 35,
-      postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/DG4u3FTzv_W/",
-      shortcode: "DG4u3FTzv_W",
-      type: "reel",
-    },
-    {
-      id: "4",
-      imageUrl: "",
-      caption: "All new Black Diamond collection — Bold, Beautiful, and Breathtaking.",
-      likes: 523,
-      comments: 42,
-      postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/C-xQLpSvF3i/",
-      shortcode: "C-xQLpSvF3i",
-      type: "reel",
-    },
-  ];
+  // Fetch Instagram posts dynamically (falls back to hardcoded posts if API fails)
+  let instagramPosts: InstaPost[] = [];
+  try {
+    const instaRes = await fetch(
+      `${process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"}/api/instagram`,
+      { next: { revalidate: 3600 } }
+    );
+    if (instaRes.ok) {
+      const instaData = await instaRes.json();
+      instagramPosts = (instaData.posts || []).map(
+        (p: { id: string; caption: string; postUrl: string; shortcode: string; type: string; imageUrl: string }) => ({
+          id: p.id,
+          imageUrl: p.imageUrl || "",
+          caption: p.caption,
+          postUrl: p.postUrl,
+          shortcode: p.shortcode,
+          type: p.type as "image" | "video" | "reel",
+        })
+      );
+    }
+  } catch {
+    // Fallback to hardcoded posts if fetch fails (e.g., during static build)
+  }
+  if (instagramPosts.length === 0) {
+    instagramPosts = [
+      { id: "1", imageUrl: "", caption: "We're Going Bigger, Brighter, and Grander... Stay tuned!", postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/DJlsEO_suSj/", shortcode: "DJlsEO_suSj", type: "reel" },
+      { id: "2", imageUrl: "", caption: "Wear Your Culture with a Modern Statement.", postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/DC7Drrfh9ls/", shortcode: "DC7Drrfh9ls", type: "reel" },
+      { id: "3", imageUrl: "", caption: "This exquisite haram is a masterpiece of traditional craftsmanship.", postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/DG4u3FTzv_W/", shortcode: "DG4u3FTzv_W", type: "reel" },
+      { id: "4", imageUrl: "", caption: "All new Black Diamond collection — Bold, Beautiful, and Breathtaking.", postUrl: "https://www.instagram.com/devishrestagoldanddiamonds/reel/C-xQLpSvF3i/", shortcode: "C-xQLpSvF3i", type: "reel" },
+    ];
+  }
 
   const promoSlides: PromoSlide[] = [
     {
